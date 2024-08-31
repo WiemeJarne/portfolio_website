@@ -1,0 +1,18 @@
+:root 
+{
+    --primaryColor: #dd9933; 
+    --secondaryColor: #1b2021; 
+    --backgroundColor: #1d2a35; 
+    --textColor: #eff6e0; 
+    --titleColor: #eff6e0;
+    --accentColor: #e83f6f;
+    --navbarTextColor: #eff6e0;
+    --navbarBgColor: #12161a;
+    --cardBackground: #1a1a1a7e;
+    --cppLogoImage: url("../../images/logos/cppLogo.png");
+    --csLogoImage: url("../../images/logos/csLogo.png");
+    --gitLogoImage: url("../../images/logos/gitLogo.png");
+    --perforceLogoImage: url("../../images/logos/perforceLogo.png");
+    --unityLogoImage: url("../../images/logos/unityLogo.png");
+    --unrealLogoImage: url("../../images/logos/unrealLogo.png");
+}
