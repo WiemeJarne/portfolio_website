@@ -1,8 +1,56 @@
-.boxContainer
+.roundedCorners
 {
-    background: var(--cardBackground);
     padding: 2%;
-	margin-top: 1%;
-	margin-bottom: 1%;
+	margin: 1% 0% 0% 1%;
 	border-radius: 25px;
+}
+
+.boxContainerItemsVertical
+{
+	background: var(--cardBackground);
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	flex-grow:1;
+}
+
+.boxContainerItemsHorizontal
+{
+	background: var(--cardBackground);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-grow:1;
+}
+
+.sectionStyle
+{
+	display:flex;
+	width:80%;
+	margin:auto;
+	justify-content:space-between;
+}
+
+.projectContainer
+{
+	background: var(--cardBackground);
+    padding: 15px;
+    width: 750px;
+}
+
+.projectContainer:nth-of-type(odd) {
+    margin-left: 0%;
+}
+
+.projectsSectionStyle
+{
+	flex-wrap:wrap;
+}
+
+.projectImage
+{
+	height:200px;
+	margin-right:2%;
+	padding: 0%;
 }

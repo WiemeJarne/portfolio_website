@@ -22,23 +22,15 @@
 	</head>
 	<body>
 		<!-- Navigation Bar -->
-		<nav class="navbar navbar-expand-lg text-uppercase" style="background-color: var(--navbarBgColor);">
-			<div class="container">
+		<nav class="navbar navbar-expand text-uppercase roundedCorners sectionStyle">
 				<h1 class="navbar-brand fw-bold">Jarne Wieme</h1>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav ms-auto">
-						<a class="nav-link px-lg-4 rounded activePage" aria-current="page" href="./index.html">About Me</a>
-						<a class="nav-link px-lg-4 rounded" href="./projects.html">Projects</a>
-					</div>
+				<div class="navbar-nav ms-auto">
+					<a class="nav-link px-lg-4  activePage" aria-current="page" href="./index.html">About Me</a>
+					<a class="nav-link px-lg-4 " href="./projects.html">Projects</a>
 				</div>
-			</div>
 		</nav>
 		<!-- Main Section -->
-		<section style="width:80%;margin:auto" class="boxContainer">
-			<div style="display:flex;">
+		<div class="roundedCorners boxContainerItemsHorizontal sectionStyle">
 				<div style="width:20%;">
 					<img src="images/Me.png" alt="About Me Image" class="aboutMeImage img-fluid" style="width:90%;border-radius:25px;">
 				</div>
@@ -54,13 +46,11 @@
 						We learned different catagories of programming for a game studio like graphics programming, gameplay programming, game engine programming and AI programming.
 					</p>
 				</div>
-			</div>
-            
-		</section>
+		</div>
 		
-		<section style="display:flex;width:80%;margin:auto;justify-content:space-between">
+		<section class="sectionStyle">
 			<!--skills-->
-			<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;flex-grow:1" class="boxContainer">
+			<div style="margin-left:0;" class="roundedCorners boxContainerItemsVertical">
 				<h3><strong>Skills</strong></h3>	
 				<table>
 					<tr>
@@ -78,7 +68,7 @@
 			</div>
 			
 			<!--my profile-->
-			<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;flex-grow:0;margin-left:1%" class="boxContainer">
+			<div class="roundedCorners boxContainerItemsVertical">
 				<h3><strong>My Profile</strong></h3>
 				<span><i class="fas fa-regular fa-address-card"></i> Jarne Wieme</span>
 				<br>
@@ -88,7 +78,7 @@
 			</div>
 			
 			<!--contact me-->
-			<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;flex-grow:1;margin-left:1%" class="boxContainer">
+			<div class="roundedCorners boxContainerItemsVertical">
 				<h3><strong>Contact Me</strong></h3>
 			<span><i class="fas fa-square-phone"></i>+32 496/81.49.52</span>
 			</br>
@@ -98,9 +88,36 @@
 			</div>
 			
 			<!--current position-->
-			<div style="display:flex;flex-direction:column;justify-content:center;align-items:center;flex-grow:1;margin-left:1%" class="boxContainer">
+			<div class="roundedCorners boxContainerItemsVertical">
 				<h3><strong>Current Position</strong></h3>
 				<span><i class="fas fa-solid fa-magnifying-glass"></i> Looking for C++ developer/game developer job</span>
+		</section>
+
+		<!--projects section-->
+		<section class="sectionStyle projectsSectionStyle">
+			<div class="roundedCorners boxContainerItemsHorizontal projectContainer">
+				<img src="images/test.jpg" alt="About Me Image" class="roundedCorners projectImage">
+				<div>
+					<h3><strong>Current Position</strong></h3>
+					<p>
+						During my time at Howest I learned to work with commonly used tools that are being used by game developments companies today.
+						This includes C++, C#, Unity, Unreal Engine 4 and 5...
+						There were also two group projects were we learned to work with source control and communicate with each other.
+					</p>
+				</div>
+			</div>
+
+			<div class="roundedCorners boxContainerItemsHorizontal projectContainer">
+				<img src="images/test.jpg" alt="About Me Image" class="roundedCorners projectImage">
+				<div>
+					<h3><strong>Current Position</strong></h3>
+					<p>
+						During my time at Howest I learned to work with commonly used tools that are being used by game developments companies today.
+						This includes C++, C#, Unity, Unreal Engine 4 and 5...
+						There were also two group projects were we learned to work with source control and communicate with each other.
+					</p>
+				</div>
+			</div>
 		</section>
 		
 		<footer class="mt-5">
