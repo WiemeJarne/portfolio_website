@@ -1,7 +1,7 @@
 .roundedCorners
 {
     padding: 2%;
-	margin: 1% 0% 0% 1%;
+	margin: 1% 0% 1% 1%;
 	border-radius: 25px;
 }
 
@@ -35,12 +35,16 @@
 .projectContainer
 {
 	background: var(--cardBackground);
-    padding: 15px;
     width: 750px;
 }
 
 .projectContainer:nth-of-type(odd) {
     margin-left: 0%;
+}
+
+.projectContainer:not(:nth-of-type(-n+2))
+{
+	margin-top: 0%;
 }
 
 .projectsSectionStyle
