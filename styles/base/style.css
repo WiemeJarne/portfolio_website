@@ -37,6 +37,11 @@ a
     color: var(--primaryColor);
 }
 
+a::after
+{
+     content: " ↗";
+}
+
 h4 
 {
     color: var(--primaryColor);

@@ -1,7 +1,8 @@
 .roundedCorners
 {
     padding: 2%;
-	margin: 1% 0% 1% 1%;
+    margin-top: 1% !important;
+    margin-left: 1%;
 	border-radius: 25px;
 }
 
@@ -61,4 +62,9 @@
 .transparentBackground
 {
 	background:transparent;
+}
+
+#GrappleItOutImage:hover
+{
+	content: url("../../images/projects/GrappleItOut/GrappleItOut.gif");
 }
