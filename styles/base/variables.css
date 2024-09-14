@@ -1,6 +1,6 @@
 :root 
 {
-    --primaryColor: #dd9933; 
+    --primaryColor: #B35F00; 
     --secondaryColor: #1b2021; 
     --backgroundColor: #1d2a35; 
     --textColor: #eff6e0; 
@@ -9,6 +9,7 @@
     --navbarTextColor: #eff6e0;
     --navbarBgColor: #12161a;
     --cardBackground: #1a1a1a7e;
+    --dropShadowColor: #000000;
     --cppLogoImage: url("../../images/logos/cppLogo.png");
     --csLogoImage: url("../../images/logos/csLogo.png");
     --gitLogoImage: url("../../images/logos/gitLogo.png");

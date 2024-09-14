@@ -17,6 +17,21 @@ body::before
     z-index: -1;
 }
 
+a
+{
+    color: var(--primaryColor);
+}
+
+a:hover
+{
+    color: white;
+}
+
+a[target="_blank"]::after
+{
+     content: " ↗";
+}
+
 p 
 {
     font-size: 1rem;
@@ -32,14 +47,10 @@ h1
     text-transform: uppercase;
 }
 
-a
+h2
 {
-    color: var(--primaryColor);
-}
-
-a::after
-{
-     content: " ↗";
+    font-size:45px;
+    font-weight: bold;
 }
 
 h4 
@@ -81,7 +92,7 @@ h2
 }
 
 .logoImage {
-	width: 50px;
+	height: 50px;
 }
 
 .logoImageTable
@@ -91,6 +102,6 @@ h2
 
 .smallLogoImage
 {
-    width:25px;
+    height:25px;
     margin:5px;
 }
