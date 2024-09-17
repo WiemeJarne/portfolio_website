@@ -35,11 +35,19 @@ const TeaForTheQueenImages=
     "images/projects/TeaForTheQueen/TeaForTheQueen07.png",
 ];
 
+const ZombieAIGameImages=
+[
+    "images/projects/ZombieAIGame/ZombieAIGame01.png",
+    "images/projects/ZombieAIGame/ZombieAIGame02.png",
+    "images/projects/ZombieAIGame/ZombieAIGame03.png"
+];
+
 window.onload = function()
 {
     cycleImage(grappleItOutImages, "GrappleItOutImage");
     cycleImage(VRSHoppingImages, "VRShoppingImage");
     cycleImage(TeaForTheQueenImages, "TeaForTheQueenImage");
+    cycleImage(ZombieAIGameImages, "ZombieAIGameImage");
 }
 
 function cycleImage(images, elementId)
