@@ -49,6 +49,15 @@ const FlowFieldPathfindingImages=
     "images/projects/FlowFieldPathfinding/FlowFieldPathfinding03.png"
 ];
 
+const AISteeringBehaviorsImages=
+[
+    "images/projects/AISteeringBehaviors/AISteeringBehaviors01.png",
+    "images/projects/AISteeringBehaviors/AISteeringBehaviors02.png",
+    "images/projects/AISteeringBehaviors/AISteeringBehaviors03.png",
+    "images/projects/AISteeringBehaviors/AISteeringBehaviors04.png",
+    "images/projects/AISteeringBehaviors/AISteeringBehaviors05.png"
+];
+
 window.onload = function()
 {
     cycleImage(grappleItOutImages, "GrappleItOutImage");
@@ -56,6 +65,7 @@ window.onload = function()
     cycleImage(TeaForTheQueenImages, "TeaForTheQueenImage");
     cycleImage(ZombieAIGameImages, "ZombieAIGameImage");
     cycleImage(FlowFieldPathfindingImages, "FlowFieldPathfindingImage");
+    cycleImage(AISteeringBehaviorsImages, "AISteeringBehaviorsImage");
 }
 
 function cycleImage(images, elementId)
