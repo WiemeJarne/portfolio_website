@@ -42,12 +42,20 @@ const ZombieAIGameImages=
     "images/projects/ZombieAIGame/ZombieAIGame03.png"
 ];
 
+const FlowFieldPathfindingImages=
+[
+    "images/projects/FlowFieldPathfinding/FlowFieldPathfinding01.png",
+    "images/projects/FlowFieldPathfinding/FlowFieldPathfinding02.png",
+    "images/projects/FlowFieldPathfinding/FlowFieldPathfinding03.png"
+];
+
 window.onload = function()
 {
     cycleImage(grappleItOutImages, "GrappleItOutImage");
     cycleImage(VRSHoppingImages, "VRShoppingImage");
     cycleImage(TeaForTheQueenImages, "TeaForTheQueenImage");
     cycleImage(ZombieAIGameImages, "ZombieAIGameImage");
+    cycleImage(FlowFieldPathfindingImages, "FlowFieldPathfindingImage");
 }
 
 function cycleImage(images, elementId)
