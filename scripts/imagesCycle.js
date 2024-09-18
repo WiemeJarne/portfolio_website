@@ -1,26 +1,26 @@
 const grappleItOutImages= 
 [
-    "images/projects/grappleitout/GrappleItOut.png",
-    "images/projects/grappleitout/GrappleItOut01.png",
-    "images/projects/grappleitout/GrappleItOut02.png",
-    "images/projects/grappleitout/GrappleItOut03.png",
-    "images/projects/grappleitout/GrappleItOut04.png",
-    "images/projects/grappleitout/GrappleItOut05.png"
+    "images/projects/GrappleItOut/GrappleItOut.png",
+    "images/projects/GrappleItOut/GrappleItOut01.png",
+    "images/projects/GrappleItOut/GrappleItOut02.png",
+    "images/projects/GrappleItOut/GrappleItOut03.png",
+    "images/projects/GrappleItOut/GrappleItOut04.png",
+    "images/projects/GrappleItOut/GrappleItOut05.png"
 ];
 
 const VRSHoppingImages=
 [
-    "images/projects/VRSHopping/VRShopping01.png",
-    "images/projects/VRSHopping/VRShopping02.png",
-    "images/projects/VRSHopping/VRShopping03.png",
-    "images/projects/VRSHopping/VRShopping04.png",
-    "images/projects/VRSHopping/VRShopping05.png",
-    "images/projects/VRSHopping/VRShopping06.png",
-    "images/projects/VRSHopping/VRShopping07.png",
-    "images/projects/VRSHopping/VRShopping08.png",
-    "images/projects/VRSHopping/VRShopping09.png",
-    "images/projects/VRSHopping/VRShopping10.png",
-    "images/projects/VRSHopping/VRShopping11.png"
+    "images/projects/VRShopping/VRShopping01.png",
+    "images/projects/VRShopping/VRShopping02.png",
+    "images/projects/VRShopping/VRShopping03.png",
+    "images/projects/VRShopping/VRShopping04.png",
+    "images/projects/VRShopping/VRShopping05.png",
+    "images/projects/VRShopping/VRShopping06.png",
+    "images/projects/VRShopping/VRShopping07.png",
+    "images/projects/VRShopping/VRShopping08.png",
+    "images/projects/VRShopping/VRShopping09.png",
+    "images/projects/VRShopping/VRShopping10.png",
+    "images/projects/VRShopping/VRShopping11.png"
 ];
 
 const TeaForTheQueenImages=
