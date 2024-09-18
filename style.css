@@ -18,6 +18,15 @@
     --unrealLogoImage: url("../../images/logos/unrealLogo.png");
 }
 
+footer
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: var(--textColor);
+}
+
 .roundedCorners
 {
 	margin-top: 35px !important;
@@ -218,7 +227,7 @@ h2
 
 .smallLogoImage
 {
-    height:25px;
+    height:35px;
     margin:5px;
 }
 
