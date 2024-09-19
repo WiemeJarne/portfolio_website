@@ -1,397 +1,845 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv='cache-control' content='no-cache'> 
-	<meta http-equiv='expires' content='0'> 
-	<meta http-equiv='pragma' content='no-cache'>
-	<title>Jarne Wieme - Game Development - Portfolio</title>
-	<meta name="description" content="Discover the portfolio of Jarne Wieme, a passionate game developer. Learn about his background, skills, and projects.">
-	<meta name="keywords" content="Jarne Wieme, game developer, Jarne, game programming, coding, Unity, Unreal Engine, c++, c plus plus, c sharp, c#, gameplay programmer">
-	<meta name="author" content="Jarne Wieme">
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<!-- Stylesheet -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-	<!-- Icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-	<!-- Navigation Bar -->
-	<nav class="dropShadow navbar navbar-expand text-uppercase roundedCorners sectionStyle boxContainerItemsHorizontal">
-		<h1 class="navbar-brand fw-bold" >Jarne Wieme</h1>
-		<div class="navbar-nav ms-auto">
-			<a class="nav-link px-lg-4" href="#projectSection">Projects</a>
-		</div>
-	</nav>
-	<!-- about me -->
-	<div class="roundedCorners boxContainerItemsHorizontal sectionStyle dropShadow">
-		<div style="width:20%;">
-			<img src="images/Me.png" alt="About Me Image" class="aboutMeImage img-fluid" style="width:90%;border-radius:25px;">
-		</div>
-		<div style="width:80%;margin:auto">
-			<h2><strong>About Me</strong></h2>
-			<p>
-				Hello! My name is Jarne Wieme, I graduated in DAE game development in June 2024 at Howest University in Kortrijk.
-			</p>
-			<p>
-				During my time at Howest I learned to work with commonly used tools that are being used by game developments companies today.
-				This includes C++, C#, Unity, Unreal Engine 4 and 5...
-				There were also two group projects were we learned to work with source control and communicate with each other.
-				We learned different catagories of programming for a game studio like graphics programming, gameplay programming, game engine programming and AI programming.
-			</p>
-		</div>
-	</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Jarne Wieme - Game Development - Portfolio</title>
+    <meta
+      name="description"
+      content="Discover the portfolio of Jarne Wieme, a passionate game developer. Learn about his background, skills, and projects."
+    />
+    <meta
+      name="keywords"
+      content="Jarne Wieme, game developer, Jarne, game programming, coding, Unity, Unreal Engine, c++, c plus plus, c sharp, c#, gameplay programmer"
+    />
+    <meta name="author" content="Jarne Wieme" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar 
+    <nav
+      class="container-fluid dropShadow navbar navbar-expand text-uppercase roundedCorners sectionStyle boxContainerItemsHorizontal"
+    >
+      <div clas="row align-items-center">
+        <div class="col col-md-10">
+          <h1 class="display-h1">Jarne Wieme</h1>
+        </div>
+        <div class="col-md-2 navbar-nav ms-auto">
+          <a class="nav-link px-lg-4" href="#projectSection">Projects</a>
+        </div>
+      </div>
+    </nav>
+    <!-- about me -->
+    <div
+      class="container text-center roundedCorners boxContainerItemsHorizontal sectionStyle dropShadow"
+    >
+      <div class="row align-items-center">
+        <div class="col col-lg-2">
+          <img
+            src="images/Me.png"
+            alt="About Me Image"
+            style="width: 90%; :border-radius: 25px"
+          />
+        </div>
+        <div class="col-lg-10">
+          <h2 class="h2" style="color: var(--primaryColor)">
+            <strong>About Me</strong>
+          </h2>
+          <p>
+            Hello! My name is Jarne Wieme, I graduated in DAE game development
+            in June 2024 at Howest University in Kortrijk.
+          </p>
+          <p>
+            During my time at Howest I learned to work with commonly used tools
+            that are being used by game developments companies today. This
+            includes C++, C#, Unity, Unreal Engine 4 and 5... There were also
+            two group projects were we learned to work with source control and
+            communicate with each other. We learned different categories of
+            programming for a game studio like graphics programming, gameplay
+            programming, game engine programming and AI programming.
+          </p>
+        </div>
+      </div>
+    </div>
 
-	<!--more info-->
-	<section class="sectionStyle">
-		<!--skills-->
-		<div style="margin-left:0;" class="roundedCorners boxContainerItemsVertical dropShadow">
-			<h3><strong>Skills</strong></h3>	
-			<table>
-				<tr>
-					<td><img src="images/logos/cppLogo.png" alt="C++" class="logoImage logoImageTable"></td>
-					<td><img src="images/logos/csLogo.png" alt="C#" class="logoImage logoImageTable"></td>
-					<td><img src="images/logos/gitLogo.png" alt="git" class="logoImage logoImageTable"></td>
-				</tr>
+    <!--more info-->
+    <div class="container" style="width: 80%">
+      <div class="row align-items-center">
+        <!--skills-->
+        <div
+          class="col col-lg-2 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>Skills</strong></h3>
+          <table>
+            <tr>
+              <td>
+                <img
+                  src="images/logos/cppLogo.png"
+                  alt="C++"
+                  class="logoImage logoImageTable"
+                />
+              </td>
+              <td>
+                <img
+                  src="images/logos/csLogo.png"
+                  alt="C#"
+                  class="logoImage logoImageTable"
+                />
+              </td>
+              <td>
+                <img
+                  src="images/logos/gitLogo.png"
+                  alt="git"
+                  class="logoImage logoImageTable"
+                />
+              </td>
+            </tr>
 
-				<tr>
-					<td><img src="images/logos/perforceLogo.png" alt="perforce" class="logoImage logoImageTable"></td>
-					<td><img src="images/logos/unityLogo.png" alt="unity" class="logoImage logoImageTable"></td>
-					<td><img src="images/logos/unrealLogo.png" alt="unreal engine(4 and 5)" class="logoImage logoImageTable"></td>
-				</tr>
-			</table>
-		</div>
+            <tr>
+              <td>
+                <img
+                  src="images/logos/perforceLogo.png"
+                  alt="perforce"
+                  class="logoImage logoImageTable"
+                />
+              </td>
+              <td>
+                <img
+                  src="images/logos/unityLogo.png"
+                  alt="unity"
+                  class="logoImage logoImageTable"
+                />
+              </td>
+              <td>
+                <img
+                  src="images/logos/unrealLogo.png"
+                  alt="unreal engine(4 and 5)"
+                  class="logoImage logoImageTable"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
 
-		<!--my profile-->
-		<div class="roundedCorners boxContainerItemsVertical dropShadow">
-			<h3><strong>My Profile</strong></h3>
-			<span><i class="fas fa-regular fa-address-card"></i> Jarne Wieme</span>
-			<br>
-			<span><i class="fas fa-map-marker-alt"></i> Ghent, Belgium</span>
-			<br>
-			<span><i class="fas fa-solid fa-scroll"></i> Digital Arts and Entertainment - Game Development (graduated June 2024)</span>
-		</div>
+        <!--my profile-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3 class="h3"><strong>My Profile</strong></h3>
+          <span
+            ><i class="fas fa-regular fa-address-card"></i> Jarne Wieme</span
+          >
+          <br />
+          <span><i class="fas fa-map-marker-alt"></i> Ghent, Belgium</span>
+          <br />
+          <span
+            ><i class="fas fa-solid fa-scroll"></i> Digital Arts and
+            Entertainment - Game Development (graduated June 2024)</span
+          >
+        </div>
 
-		<!--contact me-->
-		<div class="roundedCorners boxContainerItemsVertical dropShadow">
-			<h3><strong>Contact Me</strong></h3>
-			<span><i class="fas fa-square-phone"></i>+32 496/81.49.52</span>
-		</br>
-		<span><i class="fas fa-square-envelope"></i> jarne.wieme@telenet.be</span>
-	</br>
-	<a href="https://www.linkedin.com/in/jarnewieme/" target="_blank"><i class="fab fa-linkedin"></i>linkedin.com/in/jarnewieme</a>
-</div>
+        <!--contact me-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>Contact Me</strong></h3>
+          <span><i class="fas fa-square-phone"></i>+32 496/81.49.52</span>
+          <span
+            ><i class="fas fa-square-envelope"></i> jarne.wieme@telenet.be</span
+          >
+          <a href="https://www.linkedin.com/in/jarnewieme/" target="_blank"
+            ><i class="fab fa-linkedin"></i>linkedin.com/in/jarnewieme</a
+          >
+        </div>
 
-<!--current position-->
-<div class="roundedCorners boxContainerItemsVertical dropShadow">
-	<h3><strong>Current Position</strong></h3>
-	<span><i class="fas fa-solid fa-magnifying-glass"></i> Looking for C++ developer/game developer job</span>
-</section>
+        <!--current position-->
+        <div
+          class="col-lg-auto roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>Current Position</strong></h3>
+          <span
+            ><i class="fas fa-solid fa-magnifying-glass"></i> Looking for C++
+            developer/game developer job</span
+          >
+        </div>
+      </div>
+    </div>
 
-<!--projects section-->
+    <div
+      class="roundedCorners boxContainerItemsVertical dropShadow"
+      style="width: 100%; margin: auto"
+    >
+      <h2 class="h2" style="color: var(--primaryColor)">
+        <strong>Projects</strong>
+      </h2>
+    </div>
 
+    <!--projects section-->
+    <div class="container">
+      <div class="row align-items-center">
+        <!--Grapple-It out-->
+        <div
+          class="col col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>Grapple-It Out</strong></h3>
+          <div class="playVideoOnImageHover">
+            <img
+              id="GrappleItOutImage"
+              alt="Grapple-It Out logo"
+              class="roundedCorners projectVisials"
+              style="border-radius: 25px"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+              style="border-radius: 25px"
+            >
+              <source src="videos/GrappleItOut.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/cppLogo.png"
+              alt="C++"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/unrealLogo.png"
+              alt="unreal"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/perforceLogo.png"
+              alt="perforce"
+              class="smallLogoImage"
+            />
+          </div>
 
-<section class="projectsSection">
-	<div id="projectSection" class="roundedCorners boxContainerItemsVertical dropShadow" style="width:100%;margin:auto;">
-		<h2 >Projects</h2>
-	</div>
-	<!--Grapple-It out-->		
-	<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow">
-		<h3><strong>Grapple-It Out</strong></h3>
-		<div class="playVideoOnImageHover">
-			<img id="GrappleItOutImage" alt="Grapple-It Out logo" class="roundedCorners projectVisials"  style="border-radius:25px">
-			<!-- MP4 video that shows and plays when hovering over the image above -->
-			<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata"  style="border-radius:25px">
-				<source src="videos/GrappleItOut.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
-			<div class="boxContainerItemsHorizontal transparentBackground">
-				<img src="images/logos/cppLogo.png" alt="C++" class="smallLogoImage">
-				<img src="images/logos/unrealLogo.png" alt="unreal" class="smallLogoImage">
-				<img src="images/logos/perforceLogo.png" alt="perforce" class="smallLogoImage">
-			</div>
+          <p>
+            This was a school project. We where divided in groups with 2
+            programmers and 3 artists. This was developed over the course of 1
+            semester. I programmed the menus, the pickUps, the pickUp spawn
+            system and the input.
+          </p>
+          <div class="boxContainerItemsVertical transparentBackground">
+            <span>last update: May 2023</span>
+            <a href="https://ozikov.itch.io/grappleitout" target="_blank"
+              >view itch.io page</a
+            >
+          </div>
+        </div>
 
-			<p>
-				This was a school project. We where divided in groups with 2 programmers and 3 artists. This was developed over the course of 1 semester. I programmed the menus, the pickUps, the pickUp spawn system and the input.
-			</p>
-			<div class="boxContainerItemsVertical transparentBackground">
-				<span>last update: May 2023</span>
-				<a href="https://ozikov.itch.io/grappleitout" target="_blank">view itch.io page</a>
-			</div>
-		</div>
+        <!--VR Shopping-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+          style="padding: 0%"
+        >
+          <!--<h3><strong>VR Shopping</strong></h3>-->
+          <div class="playVideoOnImageHover">
+            <img
+              id="VRShoppingImage"
+              alt="VR Shopping image"
+              class="roundedCorners projectVisials"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+            >
+              <source src="videos/VRShopping.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/csLogo.png"
+              alt="C#"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/unityLogo.png"
+              alt="Unity"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/perforceLogo.png"
+              alt="perforce"
+              class="smallLogoImage"
+            />
+          </div>
+          <h3><strong>VR Shopping</strong></h3>
+          <div
+            class="boxContainerItemsVertical transparentBackground"
+            style="margin: 2%"
+          >
+            <p>
+              This was a school project made in collaboration with AZ Groeninge
+              Hospital in Kortrijk and Hitlab. The project was developed over
+              the course of one semester. I was responsible for programming the
+              item-grabbing mechanics, teleportation within the aisles,
+              interaction with fridge doors, input handling, the settings menu
+              and the implementation of the settings. I also handled all
+              localization in Dutch, French, English, and German.
+            </p>
+            <span>last update: November 2023</span>
+          </div>
+        </div>
 
-		<!--VR Shopping-->		
-		<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow" style="padding:0%">
-			<!--<h3><strong>VR Shopping</strong></h3>-->
-			<div class="playVideoOnImageHover">
-				<img id="VRShoppingImage" alt="VR Shopping image" class="roundedCorners projectVisials ">
-				<!-- MP4 video that shows and plays when hovering over the image above -->
-				<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata">
-					<source src="videos/VRShopping.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</div>
-				<div class="boxContainerItemsHorizontal transparentBackground">
-					<img src="images/logos/csLogo.png" alt="C#" class="smallLogoImage">
-					<img src="images/logos/unityLogo.png" alt="Unity" class="smallLogoImage">
-					<img src="images/logos/perforceLogo.png" alt="perforce" class="smallLogoImage">
-				</div>
-				<h3><strong>VR Shopping</strong></h3>
-				<div class="boxContainerItemsVertical transparentBackground" style="margin:2%">
-					<p>
-						This was a school project made in collaboration with AZ Groeninge Hospital in Kortrijk and Hitlab. The project was developed over the course of one semester. I was responsible for programming the item-grabbing mechanics, teleportation within the aisles, interaction with fridge doors, input handling, the settings menu and the implementation of the settings. I also handled all localization in Dutch, French, English, and German.
-					</p>
-					<span>last update: November 2023</span>
-				</div>
-			</div>
+        <!--Tea for the queen-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>Tea for the Queen</strong></h3>
+          <div class="playVideoOnImageHover">
+            <img
+              id="TeaForTheQueenImage"
+              alt="Tea for the Queen image"
+              class="roundedCorners projectVisials"
+              style="border-radius: 25px"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+              style="border-radius: 25px"
+            >
+              <source src="videos/TeaForTheQueen.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/unrealLogo.png"
+              alt="Unreal"
+              class="smallLogoImage"
+            />
+          </div>
+          <p>
+            This was made in a game jam where we had 3 days the time to make a
+            game in the theme "fragile". The goal of the game is to bring the
+            tea to the queen by balancing the tea on the table with 2 people. I
+            helped programming how the table works.
+          </p>
+          <div class="boxContainerItemsVertical transparentBackground">
+            <span>last update: May 2023</span>
+            <a href="https://ozikov.itch.io/tea-for-the-queen" target="_blank"
+              >view itch.io page</a
+            >
+          </div>
+        </div>
+      </div>
 
-			<!--Tea for the queen-->		
-			<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow">
-				<h3><strong>Tea for the Queen</strong></h3>
-				<div class="playVideoOnImageHover">
-					<img id="TeaForTheQueenImage" alt="Tea for the Queen image" class="roundedCorners projectVisials"  style="border-radius:25px">
-					<!-- MP4 video that shows and plays when hovering over the image above -->
-					<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata"  style="border-radius:25px">
-						<source src="videos/TeaForTheQueen.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</div>
-					<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/unrealLogo.png" alt="Unreal" class="smallLogoImage">
-					</div>
-					<p>
-						This was made in a game jam where we had 3 days the time to make a game in the theme "fragile". The goal of the game is to bring the tea to the queen by balancing the tea on the table with 2 people. I helped programming how the table works.
-					</p>
-					<div class="boxContainerItemsVertical transparentBackground">
-						<span>last update: May 2023</span>
-						<a href="https://ozikov.itch.io/tea-for-the-queen" target="_blank">view itch.io page</a>
-					</div>
-				</div>
+      <div class="row align-items-center">
+        <!--ZombieAIGame-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>Zombie AI game</strong></h3>
+          <div class="playVideoOnImageHover">
+            <img
+              id="ZombieAIGameImage"
+              alt="Zombie AI game image"
+              class="roundedCorners projectVisials"
+              style="border-radius: 25px"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+              style="border-radius: 25px"
+            >
+              <source src="videos/ZombieAIGame.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/cppLogo.png"
+              alt="C++"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/gitLogo.png"
+              alt="git"
+              class="smallLogoImage"
+            />
+          </div>
+          <p>
+            This is a zombie game that was made by our teachers for the course
+            gameplay programming.We had to create an AI plugin that plays the
+            game with as goal to survive as long as possible. I made the AI
+            using a behavior tree.
+          </p>
+          <div class="boxContainerItemsVertical transparentBackground">
+            <span>last update: January 2023</span>
+            <a href="https://github.com/WiemeJarne/ZombieAIGame" target="_blank"
+              >view github page</a
+            >
+          </div>
+        </div>
 
-				<!--ZombieAIGame-->		
-			<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow">
-				<h3><strong>Zombie AI game</strong></h3>
-				<div class="playVideoOnImageHover">
-					<img id="ZombieAIGameImage" alt="Zombie AI game image" class="roundedCorners projectVisials"  style="border-radius:25px">
-					<!-- MP4 video that shows and plays when hovering over the image above -->
-					<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata"  style="border-radius:25px">
-						<source src="videos/ZombieAIGame.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</div>
-					<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/cppLogo.png" alt="C++" class="smallLogoImage">
-						<img src="images/logos/gitLogo.png" alt="git" class="smallLogoImage">
-					</div>
-					<p>
-						This is a zombie game that was made by our teachers for the course gameplay programming.We had to create an AI plugin that plays the game with as goal to survive as long as possible. I made the AI using a behavior tree.
-					</p>
-					<div class="boxContainerItemsVertical transparentBackground">
-						<span>last update: January 2023</span>
-						<a href="https://github.com/WiemeJarne/ZombieAIGame" target="_blank">view github page</a>
-					</div>
-				</div>
+        <!--Flow field pathfinding-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+          style="padding: 0%"
+        >
+          <div class="playVideoOnImageHover">
+            <img
+              id="FlowFieldPathfindingImage"
+              alt="Flow Field Pathfinding image"
+              class="roundedCorners projectVisials"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+            >
+              <source src="videos/FlowFieldPathfinding.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/cppLogo.png"
+              alt="C++"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/gitLogo.png"
+              alt="git"
+              class="smallLogoImage"
+            />
+          </div>
+          <h3><strong>Flow field pathfinding</strong></h3>
+          <div
+            class="boxContainerItemsVertical transparentBackground"
+            style="margin: 2%"
+          >
+            <p>
+              This was a small school research project for the course gameplay
+              programming. We had to choose a topic that has something to do
+              with AI. I choose to explore flow fields because I found it
+              interesting how it works and that it can be used in very different
+              fields. For example it can be used for calculating the flow of
+              water, the spread of gas and also for the optimizing the movement
+              of agent who have a specific goal. Due to the limited time I only
+              researched and programmed the latter.
+            </p>
+            <span>last update: January 2023</span>
+            <a
+              href="https://github.com/WiemeJarne/Flow-field-pathfinding"
+              target="_blank"
+              >view github page</a
+            >
+          </div>
+        </div>
 
-				<!--Flow field pathfinding-->		
-		<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow" style="padding:0%">
-			<div class="playVideoOnImageHover">
-				<img id="FlowFieldPathfindingImage" alt="Flow Field Pathfinding image" class="roundedCorners projectVisials ">
-				<!-- MP4 video that shows and plays when hovering over the image above -->
-				<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata">
-					<source src="videos/FlowFieldPathfinding.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</div>
-				<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/cppLogo.png" alt="C++" class="smallLogoImage">
-						<img src="images/logos/gitLogo.png" alt="git" class="smallLogoImage">
-				</div>
-				<h3><strong>Flow field pathfinding</strong></h3>
-				<div class="boxContainerItemsVertical transparentBackground" style="margin:2%">
-					<p>
-						This was a small school research project for the course gameplay programming. We had to choose a topic that has something to do with AI. I choose to explore flow fields because I found it interesting how it works and that it can be used in very different fields. For example it can be used for calculating the flow of water, the spread of gas and also for the optimizing the movement of agent who have a specific goal. Due to the limited time I only researched and programmed the latter.
-					</p>
-					<span>last update: January 2023</span>
-					<a href="https://github.com/WiemeJarne/Flow-field-pathfinding" target="_blank">view github page</a>				
-				</div>
-			</div>
+        <!--AI steering behaviors-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>AI steering behaviors</strong></h3>
+          <div class="playVideoOnImageHover">
+            <img
+              id="AISteeringBehaviorsImage"
+              alt="AI steering behaviors image"
+              class="roundedCorners projectVisials"
+              style="border-radius: 25px"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+              style="border-radius: 25px"
+            >
+              <source src="videos/AISteeringBehaviors.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/cppLogo.png"
+              alt="C++"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/gitLogo.png"
+              alt="git"
+              class="smallLogoImage"
+            />
+          </div>
+          <p>
+            In this project there are various application which I programmed
+            during a school task. It shows the implementation of variours
+            steering behaviors like seek, flee, arrive, wander, evade... One of
+            the tasks was to implement spatial partitioning which you can see in
+            the end of the video.
+          </p>
+          <div class="boxContainerItemsVertical transparentBackground">
+            <span>last update: October 2022</span>
+            <a
+              href="https://github.com/WiemeJarne/AISteeringBehaviors"
+              target="_blank"
+              >view github page</a
+            >
+          </div>
+        </div>
+      </div>
 
-	<!--AI steering behaviors-->		
-			<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow">
-				<h3><strong>AI steering behaviors</strong></h3>
-				<div class="playVideoOnImageHover">
-					<img id="AISteeringBehaviorsImage" alt="AI steering behaviors image" class="roundedCorners projectVisials"  style="border-radius:25px">
-					<!-- MP4 video that shows and plays when hovering over the image above -->
-					<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata"  style="border-radius:25px">
-						<source src="videos/AISteeringBehaviors.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</div>
-					<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/cppLogo.png" alt="C++" class="smallLogoImage">
-						<img src="images/logos/gitLogo.png" alt="git" class="smallLogoImage">
-					</div>
-					<p>
-						In this project there are various application which I programmed during a school task. It shows the implementation of variours steering behaviors like seek, flee, arrive, wander, evade... One of the tasks was to implement spatial partitioning which you can see in the end of the video.
-					</p>
-					<div class="boxContainerItemsVertical transparentBackground">
-						<span>last update: October 2022</span>
-						<a href="https://github.com/WiemeJarne/AISteeringBehaviors" target="_blank">view github page</a>
-					</div>
-				</div>
+      <div class="row align-items-center">
+        <!--AI pathfinding-->
+        <div
+          class="col col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>AI pathfinding</strong></h3>
+          <div class="playVideoOnImageHover">
+            <img
+              id="AIPathfindingImage"
+              alt="AI pathfinding image"
+              class="roundedCorners projectVisials"
+              style="border-radius: 25px"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+              style="border-radius: 25px"
+            >
+              <source src="videos/AIPathfinding.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/cppLogo.png"
+              alt="C++"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/gitLogo.png"
+              alt="git"
+              class="smallLogoImage"
+            />
+          </div>
+          <p>
+            This was an assignment for the course gameplay programming where we
+            learned graph theory, pathfinding with the A-star algorithm and how
+            to make an AI navigate a navmesh using a graph. The colored graph
+            was an excercise to learn what an eulerian graph, semi-eulerian
+            graph and none eulerian graph is. The nodes are collored in a way
+            that neighboring nodes can not have the same color.
+          </p>
+          <div class="boxContainerItemsVertical transparentBackground">
+            <span>last update: November 2022</span>
+            <a
+              href="https://github.com/WiemeJarne/AIPathfinding"
+              target="_blank"
+              >view github page</a
+            >
+          </div>
+        </div>
 
-				<!--AI pathfinding-->		
-			<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow">
-				<h3><strong>AI pathfinding</strong></h3>
-				<div class="playVideoOnImageHover">
-					<img id="AIPathfindingImage" alt="AI pathfinding image" class="roundedCorners projectVisials"  style="border-radius:25px">
-					<!-- MP4 video that shows and plays when hovering over the image above -->
-					<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata"  style="border-radius:25px">
-						<source src="videos/AIPathfinding.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</div>
-					<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/cppLogo.png" alt="C++" class="smallLogoImage">
-						<img src="images/logos/gitLogo.png" alt="git" class="smallLogoImage">
-					</div>
-					<p>
-						This was an assignment for the course gameplay programming where we learned graph theory, pathfinding with the A-star algorithm and how to make an AI navigate a navmesh using a graph. The colored graph was an excercise to learn what an eulerian graph, semi-eulerian graph and none eulerian graph is. The nodes are collored in a way that neighboring nodes can not have the same color.
-					</p>
-					<div class="boxContainerItemsVertical transparentBackground">
-						<span>last update: November 2022</span>
-						<a href="https://github.com/WiemeJarne/AIPathfinding" target="_blank">view github page</a>
-					</div>
-				</div>
+        <!--CheapSharkAPI-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+          style="padding: 0%"
+        >
+          <div class="playVideoOnImageHover">
+            <img
+              id="CheapSharkAPI_Image"
+              alt="CheapShark API image"
+              class="roundedCorners projectVisials"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+            >
+              <source src="videos/CheapSharkAPI.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/csLogo.png"
+              alt="C#"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/gitLogo.png"
+              alt="git"
+              class="smallLogoImage"
+            />
+          </div>
+          <h3><strong>CheapShark API</strong></h3>
+          <div
+            class="boxContainerItemsVertical transparentBackground"
+            style="margin: 2%"
+          >
+            <p>
+              I have developed an application that utilizes the
+              <a href="https://apidocs.cheapshark.com/"> CheapShark API</a> to
+              collect extensive information about games and their sales across
+              various stores. The API also enables users to set up alerts for
+              when a game reaches a specific price or falls below it, triggering
+              an email notification. I chose this API for its comprehensive and
+              up-to-date data. This is a WPF application where I programmed all
+              the C# (in async) and the xaml using the MVVM pattern.
+            </p>
+            <span>last update: April 2023</span>
+            <a
+              href="https://github.com/WiemeJarne/CheapSharkAPI_App"
+              target="_blank"
+              >view github page</a
+            >
+          </div>
+        </div>
 
-				<!--CheapSharkAPI-->
-				<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow" style="padding:0%">
-			<div class="playVideoOnImageHover">
-				<img id="CheapSharkAPI_Image" alt="CheapShark API image" class="roundedCorners projectVisials ">
-				<!-- MP4 video that shows and plays when hovering over the image above -->
-				<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata">
-					<source src="videos/CheapSharkAPI.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</div>
-				<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/csLogo.png" alt="C#" class="smallLogoImage">
-						<img src="images/logos/gitLogo.png" alt="git" class="smallLogoImage">
-				</div>
-				<h3><strong>CheapShark API</strong></h3>
-				<div class="boxContainerItemsVertical transparentBackground" style="margin:2%">
-					<p>
-						I have developed an application that utilizes the <a href="https://apidocs.cheapshark.com/"> CheapShark API</a> to collect extensive information about games and their sales across various stores. The API also enables users to set up alerts for when a game reaches a specific price or falls below it, triggering an email notification. I chose this API for its comprehensive and up-to-date data. This is a WPF application where I programmed all the C# (in async) and the xaml using the MVVM pattern.
-					</p>
-					<span>last update: April 2023</span>
-					<a href="https://github.com/WiemeJarne/CheapSharkAPI_App" target="_blank">view github page</a>				
-				</div>
-			</div>
+        <!--2D game engine-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>2D game engine</strong></h3>
+          <div>
+            <img
+              src="images/projects/GameEngine/GameEngine.jpg"
+              alt="Game engine image"
+              class="roundedCorners projectVisials"
+              style="border-radius: 25px"
+            />
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/cppLogo.png"
+              alt="C++"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/gitLogo.png"
+              alt="git"
+              class="smallLogoImage"
+            />
+          </div>
+          <p>
+            This was part of a school assignment for the course programming 4.
+            We had to make a simple 2d game engine using the next game
+            programming patterns: Command, Observer, Singelton, Game Loop,
+            Update Method, Component, Event Queue, Service Locator, Dirty Flag.
+          </p>
+          <div class="boxContainerItemsVertical transparentBackground">
+            <span>last update: August 2023</span>
+            <a href="https://github.com/WiemeJarne/GameEngine" target="_blank"
+              >view github page</a
+            >
+          </div>
+        </div>
+      </div>
 
-			<!--2D game engine-->		
-			<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow">
-				<h3><strong>2D game engine</strong></h3>
-				<div>
-					<img src="images/projects/GameEngine/GameEngine.jpg" alt="Game engine image" class="roundedCorners projectVisials"  style="border-radius:25px">
-				</div>
-					<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/cppLogo.png" alt="C++" class="smallLogoImage">
-						<img src="images/logos/gitLogo.png" alt="git" class="smallLogoImage">
-					</div>
-					<p>
-						This was part of a school assignment for the course programming 4. We had to make a simple 2d game engine using the next game programming patterns: Command, Observer, Singelton, Game Loop, Update Method, Component, Event Queue, Service Locator, Dirty Flag.
-					</p>
-					<div class="boxContainerItemsVertical transparentBackground">
-						<span>last update: August 2023</span>
-						<a href="https://github.com/WiemeJarne/GameEngine" target="_blank">view github page</a>
-					</div>
-				</div>
+      <div class="row align-items-center">
+        <!--Burger Time-->
+        <div
+          class="col col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>Burger Time</strong></h3>
+          <div class="playVideoOnImageHover">
+            <img
+              id="BurgerTimeImage"
+              alt="Burger Time image"
+              class="roundedCorners projectVisials"
+              style="border-radius: 25px"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+              style="border-radius: 25px"
+            >
+              <source src="videos/BurgerTime.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/cppLogo.png"
+              alt="C++"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/gitLogo.png"
+              alt="git"
+              class="smallLogoImage"
+            />
+          </div>
+          <p>
+            This project is to show what is possible with my own 2D game engine.
+            It's a replica of the first tree levels of Burger Time. There are
+            tree game modes: single player, co-op(local) and versus.
+          </p>
+          <div class="boxContainerItemsVertical transparentBackground">
+            <span>last update: June 2023</span>
+            <a href="https://github.com/WiemeJarne/BurgerTime" target="_blank"
+              >view github page</a
+            >
+          </div>
+        </div>
 
-			<!--Burger Time-->		
-			<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow">
-				<h3><strong>Burger Time</strong></h3>
-				<div class="playVideoOnImageHover">
-					<img id="BurgerTimeImage" alt="Burger Time image" class="roundedCorners projectVisials"  style="border-radius:25px">
-					<!-- MP4 video that shows and plays when hovering over the image above -->
-					<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata"  style="border-radius:25px">
-						<source src="videos/BurgerTime.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</div>
-					<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/cppLogo.png" alt="C++" class="smallLogoImage">
-						<img src="images/logos/gitLogo.png" alt="git" class="smallLogoImage">
-					</div>
-					<p>
-						This project is to show what is possible with my own 2D game engine. It's a replica of the first tree levels of Burger Time. There are tree game modes: single player, co-op(local) and versus.
-					</p>
-					<div class="boxContainerItemsVertical transparentBackground">
-						<span>last update: June 2023</span>
-						<a href="https://github.com/WiemeJarne/BurgerTime" target="_blank">view github page</a>
-					</div>
-				</div>
+        <!--dual rasterizer-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+          style="padding: 0%"
+        >
+          <div class="playVideoOnImageHover">
+            <img
+              id="DualRasterizerImage"
+              alt="dual rasterizer image"
+              class="roundedCorners projectVisials"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+            >
+              <source src="videos/DualRasterizer.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/cppLogo.png"
+              alt="C++"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/gitLogo.png"
+              alt="git"
+              class="smallLogoImage"
+            />
+          </div>
+          <h3><strong>Dual rasterizer</strong></h3>
+          <div
+            class="boxContainerItemsVertical transparentBackground"
+            style="margin: 2%"
+          >
+            <p>
+              This was a school assignment for the course graphics programming.
+              We had to program a software and a hardware rasterizer and combine
+              the 2 in 1 app so you can switch between software and hardware
+              with the press of a button. As an extra I also implemented
+              transparency and multithreading in the software version.
+            </p>
+            <span>last update: January 2023</span>
+            <a
+              href="https://github.com/WiemeJarne/DualRasterizer"
+              target="_blank"
+              >view github page</a
+            >
+          </div>
+        </div>
 
-				<!--dual rasterizer-->
-				<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow" style="padding:0%">
-			<div class="playVideoOnImageHover">
-				<img id="DualRasterizerImage" alt="dual rasterizer image" class="roundedCorners projectVisials ">
-				<!-- MP4 video that shows and plays when hovering over the image above -->
-				<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata">
-					<source src="videos/DualRasterizer.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</div>
-				<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/cppLogo.png" alt="C++" class="smallLogoImage">
-						<img src="images/logos/gitLogo.png" alt="git" class="smallLogoImage">
-				</div>
-				<h3><strong>Dual rasterizer</strong></h3>
-				<div class="boxContainerItemsVertical transparentBackground" style="margin:2%">
-					<p>
-						This was a school assignment for the course graphics programming. We had to program a software and a hardware rasterizer and combine the 2 in 1 app so you can switch between software and hardware with the press of a button. As an extra I also implemented transparency and multithreading in the software version.
-					</p>
-					<span>last update: January 2023</span>
-					<a href="https://github.com/WiemeJarne/DualRasterizer" target="_blank">view github page</a>				
-				</div>
-			</div>
-			
-			<!--Software ray tracer-->		
-			<div class="roundedCorners boxContainerItemsVertical projectContainer dropShadow">
-				<h3><strong>Software ray tracer</strong></h3>
-				<div class="playVideoOnImageHover">
-					<img id="SoftwareRayTracerImage" alt="Software ray tracer image" class="roundedCorners projectVisials"  style="border-radius:25px">
-					<!-- MP4 video that shows and plays when hovering over the image above -->
-					<video class="hover-video roundedCorners projectVisials" muted loop preload="metadata"  style="border-radius:25px">
-						<source src="videos/SoftwareRayTracer.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</div>
-					<div class="boxContainerItemsHorizontal transparentBackground">
-						<img src="images/logos/cppLogo.png" alt="C++" class="smallLogoImage">
-						<img src="images/logos/gitLogo.png" alt="git" class="smallLogoImage">
-					</div>
-					<p>
-						This was a school assigment for the course graphics programming. We had to program a software ray tracer and make it have as much fps as possible. To improve the fps I implemented AABB (Axis aligned bounding box) and I added multithreading.
-					</p>
-					<div class="boxContainerItemsVertical transparentBackground">
-						<span>last update: November 2022</span>
-						<a href="https://github.com/WiemeJarne/SoftwareRayTracer" target="_blank">view github page</a>
-					</div>
-				</div>
-			</section>
+        <!--Software ray tracer-->
+        <div
+          class="col-lg-3 roundedCorners boxContainerItemsVertical dropShadow"
+        >
+          <h3><strong>Software ray tracer</strong></h3>
+          <div class="playVideoOnImageHover">
+            <img
+              id="SoftwareRayTracerImage"
+              alt="Software ray tracer image"
+              class="roundedCorners projectVisials"
+              style="border-radius: 25px"
+            />
+            <!-- MP4 video that shows and plays when hovering over the image above -->
+            <video
+              class="hover-video roundedCorners projectVisials"
+              muted
+              loop
+              preload="metadata"
+              style="border-radius: 25px"
+            >
+              <source src="videos/SoftwareRayTracer.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="boxContainerItemsHorizontal transparentBackground">
+            <img
+              src="images/logos/cppLogo.png"
+              alt="C++"
+              class="smallLogoImage"
+            />
+            <img
+              src="images/logos/gitLogo.png"
+              alt="git"
+              class="smallLogoImage"
+            />
+          </div>
+          <p>
+            This was a school assigment for the course graphics programming. We
+            had to program a software ray tracer and make it have as much fps as
+            possible. To improve the fps I implemented AABB (Axis aligned
+            bounding box) and I added multithreading.
+          </p>
+          <div class="boxContainerItemsVertical transparentBackground">
+            <span>last update: November 2022</span>
+            <a
+              href="https://github.com/WiemeJarne/SoftwareRayTracer"
+              target="_blank"
+              >view github page</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<footer class="mt-5">
-				<strong>&copy; Jarne Wieme 2024-2025</strong>
-			</footer>
+    <footer class="mt-5">
+      <strong>&copy; Jarne Wieme 2024-2025</strong>
+    </footer>
 
-			<!-- Scripts -->
-			<script src="scripts/imagesCycle.js"></script>
-			<script src="scripts/playVideoOnImageHover.js"></script>
-		</body>
-		</html>
+    <!-- Scripts -->
+    <script src="scripts/imagesCycle.js"></script>
+    <script src="scripts/playVideoOnImageHover.js"></script>
+  </body>
+</html>
