@@ -27,6 +27,15 @@ footer
     color: var(--textColor);
 }
 
+.projectContainer
+{
+    background: var(--cardBackground);
+    min-width: 425px;
+    max-width: 425px;
+    height: fit-content;
+    margin-left: 0%;
+}
+
 .roundedCorners
 {
 	margin-top: 35px !important;
