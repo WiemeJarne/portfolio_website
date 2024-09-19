@@ -46,7 +46,8 @@ footer
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	padding: 2%;
+	padding: 15px;
+    min-height: 200px;
 }
 
 .boxContainerItemsHorizontal
@@ -66,30 +67,6 @@ footer
 	justify-content:space-evenly;
 }
 
-.projectContainer
-{
-	background: var(--cardBackground);
-	min-width: 32%;
-	max-width: 32%;
-	height: max-content;
-	margin-left: 0%;
-}
-
-.projectContainer:not(:nth-of-type(-n+2))
-{
-	margin-top: 0%;
-}
-
-.projectsSection
-{
-	display: flex;
-	margin:auto;
-	flex-wrap:wrap;
-	width:80%;
-	justify-content:space-between;
-	align-items:center;
-	padding-top: 100px;
-}
 
 .projectVisials
 {
