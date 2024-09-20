@@ -105,6 +105,53 @@ const SoftwareRayTracerImages=
     "images/projects/SoftwareRayTracer/SoftwareRayTracer02.png"
 ];
 
+const BlockGameImages=
+[
+    "images/projects/BlockGame/BlockGame01.png",
+    "images/projects/BlockGame/BlockGame02.png",
+    "images/projects/BlockGame/BlockGame03.png",
+    "images/projects/BlockGame/BlockGame04.png",
+    "images/projects/BlockGame/BlockGame05.png",
+    "images/projects/BlockGame/BlockGame06.png",
+    "images/projects/BlockGame/BlockGame07.png",
+    "images/projects/BlockGame/BlockGame08.png"
+];
+
+const FijitImages=
+[
+    "images/projects/Fijit/Fijit01.png",
+    "images/projects/Fijit/Fijit02.png",
+    "images/projects/Fijit/Fijit03.png",
+    "images/projects/Fijit/Fijit04.png",
+    "images/projects/Fijit/Fijit05.png",
+    "images/projects/Fijit/Fijit06.png",
+    "images/projects/Fijit/Fijit07.png",
+    "images/projects/Fijit/Fijit08.png",
+    "images/projects/Fijit/Fijit09.png",
+    "images/projects/Fijit/Fijit10.png",
+    "images/projects/Fijit/Fijit11.png",
+    "images/projects/Fijit/Fijit12.png"
+];
+
+const SpeechDashImages=
+[
+    "images/projects/SpeechDash/SpeechDash01.png",
+    "images/projects/SpeechDash/SpeechDash02.png",
+    "images/projects/SpeechDash/SpeechDash03.png",
+    "images/projects/SpeechDash/SpeechDash04.png",
+    "images/projects/SpeechDash/SpeechDash05.png",
+    "images/projects/SpeechDash/SpeechDash06.png",
+    "images/projects/SpeechDash/SpeechDash07.png"
+];
+
+const TrainGameImages=
+[
+    "images/projects/TrainGame/TrainGame01.png",
+    "images/projects/TrainGame/TrainGame02.png",
+    "images/projects/TrainGame/TrainGame03.png",
+    "images/projects/TrainGame/TrainGame04.png"
+];
+
 window.onload = function()
 {
     cycleImage(grappleItOutImages, "GrappleItOutImage");
@@ -118,6 +165,10 @@ window.onload = function()
     cycleImage(BurgerTimeImages, "BurgerTimeImage");
     cycleImage(DualRasterizerImages, "DualRasterizerImage");
     cycleImage(SoftwareRayTracerImages, "SoftwareRayTracerImage");
+    cycleImage(BlockGameImages, "BlockGameImage");
+    cycleImage(FijitImages, "FijitImage");
+    cycleImage(SpeechDashImages, "SpeechDashImage");
+    cycleImage(TrainGameImages, "TrainGameImage");
 }
 
 function cycleImage(images, elementId)
