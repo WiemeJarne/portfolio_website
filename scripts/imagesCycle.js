@@ -152,24 +152,27 @@ const TrainGameImages=
     "images/projects/TrainGame/TrainGame04.png"
 ];
 
-window.onload = function()
-{
-    cycleImage(grappleItOutImages, "GrappleItOutImage");
-    cycleImage(VRSHoppingImages, "VRShoppingImage");
-    cycleImage(TeaForTheQueenImages, "TeaForTheQueenImage");
-    cycleImage(ZombieAIGameImages, "ZombieAIGameImage");
-    cycleImage(FlowFieldPathfindingImages, "FlowFieldPathfindingImage");
-    cycleImage(AISteeringBehaviorsImages, "AISteeringBehaviorsImage");
-    cycleImage(AIPathfindingImages, "AIPathfindingImage");
-    cycleImage(CheapSharkAPI_Images, "CheapSharkAPI_Image");
-    cycleImage(BurgerTimeImages, "BurgerTimeImage");
-    cycleImage(DualRasterizerImages, "DualRasterizerImage");
-    cycleImage(SoftwareRayTracerImages, "SoftwareRayTracerImage");
-    cycleImage(BlockGameImages, "BlockGameImage");
-    cycleImage(FijitImages, "FijitImage");
-    cycleImage(SpeechDashImages, "SpeechDashImage");
-    cycleImage(TrainGameImages, "TrainGameImage");
-}
+const GameEngineImages=
+[
+    "images/projects/GameEngine/GameEngine.jpg"
+];
+
+cycleImage(grappleItOutImages, "GrappleItOutImage");
+cycleImage(VRSHoppingImages, "VRShoppingImage");
+cycleImage(TeaForTheQueenImages, "TeaForTheQueenImage");
+cycleImage(ZombieAIGameImages, "ZombieAIGameImage");
+cycleImage(FlowFieldPathfindingImages, "FlowFieldPathfindingImage");
+cycleImage(AISteeringBehaviorsImages, "AISteeringBehaviorsImage");
+cycleImage(AIPathfindingImages, "AIPathfindingImage");
+cycleImage(CheapSharkAPI_Images, "CheapSharkAPI_Image");
+cycleImage(BurgerTimeImages, "BurgerTimeImage");
+cycleImage(DualRasterizerImages, "DualRasterizerImage");
+cycleImage(SoftwareRayTracerImages, "SoftwareRayTracerImage");
+cycleImage(BlockGameImages, "BlockGameImage");
+cycleImage(FijitImages, "FijitImage");
+cycleImage(SpeechDashImages, "SpeechDashImage");
+cycleImage(TrainGameImages, "TrainGameImage");
+cycleImage(GameEngineImages, "GameEngineImage");
 
 function cycleImage(images, elementId)
 {
@@ -186,7 +189,10 @@ function cycleImage(images, elementId)
 
         image.src=images[currentImageIndex];
 
-        setTimeout(updateImage, 3000);
+        if(images.length > 1)
+        {
+            setTimeout(updateImage, 3000);
+        }
     }
     
     updateImage();
