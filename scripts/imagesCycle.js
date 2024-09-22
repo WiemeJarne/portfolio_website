@@ -157,6 +157,9 @@ const GameEngineImages=
     "images/projects/GameEngine/GameEngine.jpg"
 ];
 
+cycleImage(FijitImages, "FijitImage");
+cycleImage(TrainGameImages, "TrainGameImage");
+cycleImage(SpeechDashImages, "SpeechDashImage");
 cycleImage(grappleItOutImages, "GrappleItOutImage");
 cycleImage(VRSHoppingImages, "VRShoppingImage");
 cycleImage(TeaForTheQueenImages, "TeaForTheQueenImage");
@@ -164,15 +167,12 @@ cycleImage(ZombieAIGameImages, "ZombieAIGameImage");
 cycleImage(FlowFieldPathfindingImages, "FlowFieldPathfindingImage");
 cycleImage(AISteeringBehaviorsImages, "AISteeringBehaviorsImage");
 cycleImage(AIPathfindingImages, "AIPathfindingImage");
-cycleImage(CheapSharkAPI_Images, "CheapSharkAPI_Image");
+cycleImage(CheapSharkAPI_Images, "CheapSharkAPIImage");
+cycleImage(GameEngineImages, "GameEngineImage");
 cycleImage(BurgerTimeImages, "BurgerTimeImage");
 cycleImage(DualRasterizerImages, "DualRasterizerImage");
 cycleImage(SoftwareRayTracerImages, "SoftwareRayTracerImage");
 cycleImage(BlockGameImages, "BlockGameImage");
-cycleImage(FijitImages, "FijitImage");
-cycleImage(SpeechDashImages, "SpeechDashImage");
-cycleImage(TrainGameImages, "TrainGameImage");
-cycleImage(GameEngineImages, "GameEngineImage");
 
 function cycleImage(images, elementId)
 {
@@ -186,14 +186,30 @@ function cycleImage(images, elementId)
             currentImageIndex = 0;
 
         image = document.getElementById(elementId);
+        
+        if(image != null)
+            image.src=images[currentImageIndex];
 
-        image.src=images[currentImageIndex];
-
-        if(images.length > 1)
-        {
-            setTimeout(updateImage, 3000);
-        }
+        setTimeout(updateImage, 3000);
     }
     
     updateImage();
 }
+
+window.onload = function() {
+    const containers = document.querySelectorAll('.playVideoOnImageHover');
+console.log(containers);
+    // Loop through each container and add hover functionality
+    containers.forEach(container => {
+        const video = container.querySelector('.hover-video');
+
+        container.addEventListener('mouseenter', function() {
+            video.play(); // Start video on hover
+        });
+
+        container.addEventListener('mouseleave', function() {
+            video.pause(); // Pause video when not hovering
+            video.currentTime = 0; // Reset video to the start
+        });
+    });
+};
