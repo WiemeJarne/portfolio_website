@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         data.forEach(project => 
         {
-            cycleImage(project.images, `"${project.folderName}Image"`);
+            cycleImage(project.images, `${project.folderName}Image`);
         });
     })
     .catch(error => 
@@ -17,20 +17,16 @@ window.addEventListener('DOMContentLoaded', function() {
     {
         let currentImageIndex = 0;
 
-
         function updateImage()
         {
-            ++currentImageIndex;
-
-            if(currentImageIndex >= images.length)
-                currentImageIndex = 0;   
-
-                image = document.getElementById(elementId);
-        console.log(elementId);
-        console.log(image);         
+            const image = document.getElementById(elementId);
+            console.log(elementId);
+            console.log(image);         
 
             if(image != null)
                 image.src=images[currentImageIndex];
+
+            currentImageIndex = (currentImageIndex + 1) % images.length;
 
             setTimeout(updateImage, 3000);
         }
