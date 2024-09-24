@@ -1,4 +1,3 @@
-window.addEventListener('DOMContentLoaded', function() {
     fetch('projectsImagesPaths.json')
     .then(response => response.json())  // Parse the JSON response
     .then(data => 
@@ -30,4 +29,3 @@ window.addEventListener('DOMContentLoaded', function() {
     
         updateImage();
     }
-});
