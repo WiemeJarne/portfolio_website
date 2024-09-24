@@ -1,4 +1,4 @@
-addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", (event) => {
     fetch('projectsImagesPaths.json')
     .then(response => response.json())  // Parse the JSON response
     .then(data => 

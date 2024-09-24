@@ -1,4 +1,4 @@
-addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", (event) => {
     const containers = document.querySelectorAll('.playVideoOnImageHover');
 
     // Loop through each container and add hover functionality
