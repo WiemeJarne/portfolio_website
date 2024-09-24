@@ -7,7 +7,7 @@ if(document.readyState !== 'loading')
     console.log("executing if");
     document.addEventListener('DOMContentLoaded', function () 
     {
-        addEventListeners();
+        setTimeout(addEventListeners, 3000);
     });
 }
 else
