@@ -1,6 +1,5 @@
-window.onload = function()
-{
-    console.log("test");
+addEventListener("DOMContentLoaded", (event) => {
+console.log("test");
     fetch('projectsImagesPaths.json')
     .then(response => response.json())  // Parse the JSON response
     .then(data => 
@@ -39,4 +38,4 @@ window.onload = function()
     
         updateImage();
     }
-}
+});

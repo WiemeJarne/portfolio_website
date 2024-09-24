@@ -1,4 +1,4 @@
-window.onload = function() {
+addEventListener("DOMContentLoaded", (event) => {
     const containers = document.querySelectorAll('.playVideoOnImageHover');
 
     // Loop through each container and add hover functionality
@@ -17,4 +17,4 @@ window.onload = function() {
             video.currentTime = 0; // Reset video to the start
         });
     });
-};
+});
