@@ -5,6 +5,9 @@ window.onload = function() {
     containers.forEach(container => {
         const video = container.querySelector('.hover-video');
 
+        if(video == null)
+            return;
+
         container.addEventListener('mouseenter', function() {
             video.play(); // Start video on hover
         });

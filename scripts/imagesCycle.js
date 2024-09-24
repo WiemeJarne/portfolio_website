@@ -20,6 +20,8 @@ window.onload = function()
     {
         let currentImageIndex = 0;
 
+        console.log(images);
+
         function updateImage()
         {
             ++currentImageIndex;
