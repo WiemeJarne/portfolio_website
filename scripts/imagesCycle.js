@@ -18,7 +18,8 @@ addEventListener("DOMContentLoaded", (event) => {
         let currentImageIndex = 0;
 
         image = document.getElementById(elementId);
-
+        console.log(elementId);
+        console.log(image);
         function updateImage()
         {
             ++currentImageIndex;
