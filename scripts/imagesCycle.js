@@ -27,7 +27,7 @@ window.onload = function()
             if(currentImageIndex >= images.length)
                 currentImageIndex = 0;
             
-            image = document.getElementById(elementId);
+            let image = document.getElementById(elementId);
         
             if(image != null)
                 image.src=images[currentImageIndex];
