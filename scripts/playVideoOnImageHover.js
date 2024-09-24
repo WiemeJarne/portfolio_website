@@ -35,3 +35,4 @@ function addEventListeners() {
             video.currentTime = 0; // Reset video to the start
         });
     });
+}
