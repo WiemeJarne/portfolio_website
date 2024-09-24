@@ -16,6 +16,8 @@ addEventListener("DOMContentLoaded", (event) => {
     function cycleImage(images, elementId)
     {
         let currentImageIndex = 0;
+        console.log("images");
+        console.log(images);
 
         function updateImage()
         {
