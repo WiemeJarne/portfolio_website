@@ -17,19 +17,15 @@ addEventListener("DOMContentLoaded", (event) => {
     {
         let currentImageIndex = 0;
 
+        image = document.getElementById(elementId);
 
         function updateImage()
         {
             ++currentImageIndex;
 
             if(currentImageIndex >= images.length)
-                currentImageIndex = 0;
-            
-            let image = document.getElementById(elementId);
-        console.log("elementId");
-        console.log(elementId);
-        console.log("image");
-        console.log(image);
+                currentImageIndex = 0;            
+
             if(image != null)
                 image.src=images[currentImageIndex];
 
