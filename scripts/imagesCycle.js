@@ -16,10 +16,10 @@ window.addEventListener('DOMContentLoaded', function() {
     function cycleImage(images, elementId)
     {
         let currentImageIndex = 0;
+        const image = document.getElementById(elementId);
 
         function updateImage()
         {
-            const image = document.getElementById(elementId);
             console.log(elementId);
             console.log(image);         
 
