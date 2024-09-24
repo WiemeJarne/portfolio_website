@@ -26,8 +26,8 @@ addEventListener("DOMContentLoaded", (event) => {
                 currentImageIndex = 0;
             
             let image = document.getElementById(elementId);
-        console.log("image");
-        console.log(image);
+        console.log("elementId");
+        console.log(elementId);
             if(image != null)
                 image.src=images[currentImageIndex];
 
