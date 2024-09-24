@@ -28,7 +28,7 @@ projectsData.projects.forEach(project =>
     // Read the directory and filter for `.png` and .'jpg' files
         images = fs.readdirSync(projectFolderPath)
         .filter(file => file.endsWith('.png') || file.endsWith('.jpg'))
-        .map(file => `${project.folderName}/${file}`);
+        .map(file => `images/projects/${project.folderName}/${file}`);
         ;
     } else {
         console.warn(`Directory not found: ${projectFolderPath}`);

@@ -1,10 +1,8 @@
 addEventListener("DOMContentLoaded", (event) => {
-console.log("test");
     fetch('projectsImagesPaths.json')
     .then(response => response.json())  // Parse the JSON response
     .then(data => 
     {
-        console.log(data);
         data.forEach(project => 
         {
             cycleImage(project.images, `"${project.folderName}Image"`);
@@ -18,8 +16,6 @@ console.log("test");
     function cycleImage(images, elementId)
     {
         let currentImageIndex = 0;
-
-        console.log(images);
 
         function updateImage()
         {
