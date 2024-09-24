@@ -1,6 +1,6 @@
 window.onload = function() {
     const containers = document.querySelectorAll('.playVideoOnImageHover');
-console.log(containers);
+
     // Loop through each container and add hover functionality
     containers.forEach(container => {
         const video = container.querySelector('.hover-video');
