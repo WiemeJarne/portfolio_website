@@ -1,6 +1,5 @@
-console.log("test");
- const containers = document.getElementsByClassName("playVideoOnImageHover");
-console.log(containers);
+ const containers = Array.from(document.getElementsByClassName("playVideoOnImageHover"));
+
     // Loop through each container and add hover functionality
     containers.forEach(container => {
         const video = container.querySelector('.hover-video');
