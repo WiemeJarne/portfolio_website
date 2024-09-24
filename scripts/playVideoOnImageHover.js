@@ -2,7 +2,23 @@
  const containers = document.getElementsByClassName("playVideoOnImageHover");
 console.log(containers);
 
-document.addEventListener('DOMContentLoaded', function() {
+if(document.readyState !== 'loading')
+{
+    console.log("executing if");
+    document.addEventListener('DOMContentLoaded', function () 
+    {
+        addEventListeners();
+    });
+}
+else
+{
+     console.log("executing else");
+    addEventListeners();
+}
+
+function addEventListeners() {
+    console.log("containers");
+    console.log(containers);
     // Loop through each container and add hover functionality
     Array.from(containers).forEach(function (container) {
         const video = container.querySelector('.hover-video');
@@ -19,4 +35,3 @@ document.addEventListener('DOMContentLoaded', function() {
             video.currentTime = 0; // Reset video to the start
         });
     });
-});
