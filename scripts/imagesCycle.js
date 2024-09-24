@@ -20,9 +20,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
         function updateImage()
         {
-            console.log(elementId);
-            console.log(image);         
-
             if(image != null)
                 image.src=images[currentImageIndex];
 
