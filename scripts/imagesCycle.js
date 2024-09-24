@@ -16,8 +16,7 @@ addEventListener("DOMContentLoaded", (event) => {
     function cycleImage(images, elementId)
     {
         let currentImageIndex = 0;
-        console.log("images");
-        console.log(images);
+
 
         function updateImage()
         {
@@ -27,7 +26,8 @@ addEventListener("DOMContentLoaded", (event) => {
                 currentImageIndex = 0;
             
             let image = document.getElementById(elementId);
-        
+        console.log("image");
+        console.log(image);
             if(image != null)
                 image.src=images[currentImageIndex];
 
