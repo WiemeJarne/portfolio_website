@@ -11,7 +11,6 @@
             ],
             "description": "The first project of my Say It Labs internship is a mini-game collection aimed at 6-8 year olds to practice articulation. After each fidget game, the player says a word to improve speech. Some noted it could also help people with Alzheimer's. I focused on implementing the mini-games over a month and a half.",
             "lastUpdate": "March 2024",
-            "codeLink": "https://github.com/example/fijit",
             "styleType": 1
         },
         {
@@ -74,7 +73,7 @@
             "title": "Tea for the Queen",
             "videoSrc": "videos/TeaForTheQueen.mp4",
             "technologies": [
-                { "src": "images/logos/UnrealLogo.png", "alt": "Unreal" }
+                { "src": "images/logos/unrealLogo.png", "alt": "Unreal" }
             ],
             "description": "This was made in a game jam where we had 3 days the time to make a game in the theme \"fragile\". The goal of the game is to bring the tea to the queen by balancing the tea on the table with 2 people. I helped programming how the table works.",
             "lastUpdate": "May 2023",
