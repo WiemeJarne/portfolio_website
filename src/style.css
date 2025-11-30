@@ -1,0 +1,145 @@
+:root {
+    --primaryColor: #B35F00;
+    --secondaryColor: #1b2021;
+    --backgroundColor: #1d2a3500;
+    --textColor: #eff6e0;
+    --titleColor: #eff6e0;
+    --accentColor: #e83f6f;
+    --navbarTextColor: #eff6e0;
+    --navbarBgColor: #12161a;
+    --cardBackground: #1c2228;
+    --dropShadowColor: #000000;
+    --cppLogoImage: url("../../images/logos/cppLogo.png");
+    --csLogoImage: url("../../images/logos/csLogo.png");
+    --gitLogoImage: url("../../images/logos/gitLogo.png");
+    --perforceLogoImage: url("../../images/logos/perforceLogo.png");
+    --unityLogoImage: url("../../images/logos/unityLogo.png");
+    --unrealLogoImage: url("../../images/logos/unrealLogo.png");
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: var(--textColor);
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* if your app is column-based */
+}
+
+.boxContainerItemsVertical {
+    background: var(--cardBackground);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    height: fit-content;
+}
+
+.boxContainerItemsHorizontal {
+    background: var(--cardBackground);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    height: fit-content;
+}
+
+.sectionStyle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transparentBackground {
+    background: transparent;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    font-family: 'Source Sans Pro', sans-serif;
+    height: fit-content;
+}
+
+a {
+    color: var(--primaryColor);
+}
+
+a:hover {
+    color: white;
+}
+
+a[target="_blank"]::after {
+    content:"↗";
+}
+
+p {
+    font-size: 1rem;
+    color: var(--textColor);
+    text-align: justify;
+}
+
+h1 {
+    color: var(--titleColor);
+    font-size: 2rem;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+h4 {
+    color: var(--primaryColor);
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+h2 {
+    color: var(--primaryColor);
+}
+
+.highlight {
+    color: var(--accentColor);
+}
+
+.btn-primary {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--primaryColor) !important;
+    transform: scale(1.1);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: var(--primaryColor) !important;
+}
+
+.logoImage {
+    height: 50px;
+}
+
+.logoImageTable {
+    padding: 5px;
+}
+
+.activePage {
+    color: var(--primaryColor);
+}
