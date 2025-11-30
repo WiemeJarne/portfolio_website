@@ -18,7 +18,7 @@ export default function Projects() {
 
         const interval = setInterval(() => {
           index = (index + 1) % project.images.length;
-          imgEl.src = `/${project.images[index]}`;
+          imgEl.src = `./${project.images[index]}`;
         }, 2000);
 
         intervals.push(interval);
