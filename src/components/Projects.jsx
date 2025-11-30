@@ -78,7 +78,7 @@ export default function Projects() {
                   id={`${project.folderName}Image`}
                   alt={`${project.title} image`}
                   className="projectVisials"
-                  src={`/${project.images[0]}`}
+                  src={`./${project.images[0]}`}
                   onMouseEnter={() => {
                     const video = videoRefs.current[project.folderName];
                     if (video) video.play().catch(() => { });
