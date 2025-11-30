@@ -57,35 +57,35 @@ export default function Home() {
               <h3><strong>Skills</strong></h3>
               <div className="skillsGrid">
                 <div className="skillItem">
-                  <img src="/images/logos/cppLogo.png" className="logoImage" />
+                  <img src="./images/logos/cppLogo.png" className="logoImage" />
                   <span>C++</span>
                 </div>
                 <div className="skillItem">
-                  <img src="/images/logos/csLogo.png" className="logoImage" />
+                  <img src="./images/logos/csLogo.png" className="logoImage" />
                   <span>C#</span>
                 </div>
                 <div className="skillItem">
-                  <img src="/images/logos/gitLogo.png" className="logoImage" />
+                  <img src="./images/logos/gitLogo.png" className="logoImage" />
                   <span>Git</span>
                 </div>
                 <div className="skillItem">
-                  <img src="/images/logos/perforceLogo.png" className="logoImage" />
+                  <img src="./images/logos/perforceLogo.png" className="logoImage" />
                   <span>Perforce</span>
                 </div>
                 <div className="skillItem">
-                  <img src="/images/logos/unityLogo.png" className="logoImage" />
+                  <img src="./images/logos/unityLogo.png" className="logoImage" />
                   <span>Unity</span>
                 </div>
                 <div className="skillItem">
-                  <img src="/images/logos/unrealLogo.png" className="logoImage" />
+                  <img src="./images/logos/unrealLogo.png" className="logoImage" />
                   <span>Unreal engine</span>
                 </div>
                 <div className="skillItem">
-                  <img src="/images/logos/luaLogo.png" className="logoImage" />
+                  <img src="./images/logos/luaLogo.png" className="logoImage" />
                   <span>Lua</span>
                 </div>
                 <div className="skillItem">
-                  <img src="/images/logos/robloxStudioLogo.png" className="logoImage" />
+                  <img src="./images/logos/robloxStudioLogo.png" className="logoImage" />
                   <span>Roblox studio</span>
                 </div>
               </div>

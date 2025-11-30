@@ -13,18 +13,18 @@
             "lastUpdate": "March 2024",
             "styleType": 1,
             "images": [
-                "images/projects/Fijit/Fijit01.png",
-                "images/projects/Fijit/Fijit02.png",
-                "images/projects/Fijit/Fijit03.png",
-                "images/projects/Fijit/Fijit04.png",
-                "images/projects/Fijit/Fijit05.png",
-                "images/projects/Fijit/Fijit06.png",
-                "images/projects/Fijit/Fijit07.png",
-                "images/projects/Fijit/Fijit08.png",
-                "images/projects/Fijit/Fijit09.png",
-                "images/projects/Fijit/Fijit10.png",
-                "images/projects/Fijit/Fijit11.png",
-                "images/projects/Fijit/Fijit12.png"
+                "/images/projects/Fijit/Fijit01.png",
+                "/images/projects/Fijit/Fijit02.png",
+                "/images/projects/Fijit/Fijit03.png",
+                "/images/projects/Fijit/Fijit04.png",
+                "/images/projects/Fijit/Fijit05.png",
+                "/images/projects/Fijit/Fijit06.png",
+                "/images/projects/Fijit/Fijit07.png",
+                "/images/projects/Fijit/Fijit08.png",
+                "/images/projects/Fijit/Fijit09.png",
+                "/images/projects/Fijit/Fijit10.png",
+                "/images/projects/Fijit/Fijit11.png",
+                "/images/projects/Fijit/Fijit12.png"
             ]
         },
         {
@@ -40,10 +40,10 @@
             "lastUpdate": "June 2024",
             "styleType": 2,
             "images": [
-      "images/projects/TrainGame/TrainGame01.png",
-      "images/projects/TrainGame/TrainGame02.png",
-      "images/projects/TrainGame/TrainGame03.png",
-      "images/projects/TrainGame/TrainGame04.png"
+      "./images/projects/TrainGame/TrainGame01.png",
+      "./images/projects/TrainGame/TrainGame02.png",
+      "./images/projects/TrainGame/TrainGame03.png",
+      "./images/projects/TrainGame/TrainGame04.png"
     ]
         },
         {
