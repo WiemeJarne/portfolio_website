@@ -1,7 +1,8 @@
 .projectsGrid {
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
     justify-content: space-between;
 }
 
@@ -9,11 +10,8 @@
      max-height: 100%;
     overflow: hidden;
     text-align: center;
-    position: relative;
-    z-index: 5;
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
     padding: 5%;
 }
 
@@ -92,8 +90,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 30%;
 }
 
 .projectVisials {
@@ -107,9 +103,10 @@
 }
 
 .playVideoOnImageHover {
+    isolation: isolate;
     position: relative;
     width: 100%;
-    height: fit-content;
+    height: 35%;
     overflow: hidden;
 }
 
@@ -143,27 +140,24 @@
 }
 
 .smallLogoImage {
-    mix-blend-mode: luminosity;
     height: 35px;
     margin: 5px;
 }
 
 .projectsTitleBanner {
     mix-blend-mode: luminosity;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.projectsTitleBanner h3 {
-    font-weight: 600;
-    margin: 0;
-    font-size: min(5svh, 3em);
-    margin: 0;
-    background-image: linear-gradient(to bottom, #fff, #6f6fbe);
-    background-size: 1em 1.5em;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+.bottomMeta {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.pc-inside.projectInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }

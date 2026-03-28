@@ -24,11 +24,11 @@ const ProfileCardComponent = ({
     iconUrl = '<Placeholder for icon URL>',
     grainUrl = '<Placeholder for grain URL>',
     innerGradient,
-    behindGlowEnabled = true,
+    behindGlowEnabled = false,
     behindGlowColor,
     behindGlowSize,
     className = '',
-    enableTilt = true,
+    enableTilt = false,
     enableMobileTilt = false,
     mobileTiltSensitivity = 5,
     miniAvatarUrl,
@@ -317,8 +317,6 @@ const ProfileCardComponent = ({
             <div ref={shellRef} className="pc-card-shell">
                 <section className="pc-card" style={{height: cardHeight}}>
                     <div className="pc-inside">
-                        <div className="pc-shine" />
-                        <div className="pc-glare" />
                             {children}
                     </div>
                 </section>

@@ -31,90 +31,78 @@ export default function Projects() {
   return (
     <section className="projectsSection">
       <GlowCard
-        cardHeight="20svh"
-        cardPadding="1% 5% 1% 5%"
+        cardHeight="10svh"
+        cardWith="75%"
+        cardPadding="1% 0% 1% 0%"
         children={
           <div className="projectsTitleBanner">
-            <h3>Projects</h3>
+            <h1>Projects</h1>
           </div>
         }
       />
 
       <div className="projectsGrid">
         {projectsData.projects.map((project, index) => {
-          const itemsPerRow = 3;
-          const columnIndex = index % itemsPerRow; // 0 = first column, 1 = second, 2 = third
-
-          let columnPadding;
-          if (columnIndex === 0) columnPadding = "1% 0% 0% 5%";      // first row
-          else if (columnIndex === 1) columnPadding = "1% 0% 0% 0%"; // second row
-          else columnPadding = "1% 5% 0% 0%";                      // third row
-
           return (
             <GlowCard
               key={`grid1-${project.folderName}`}
               cardWith="32%"
               cardHeight="80svh"
-              cardPadding={columnPadding}
+              cardPadding="1% 0% 0% 0%"
               children={
-                <div
-                  className={`projectContainer ${project.styleType === 2 ? "style2" : ""}`}
-                >
-                  {project.styleType === 1 && <h3><strong>{project.title}</strong></h3>}
+                <div className={`projectContainer style2`}>
 
                   <div className="playVideoOnImageHover">
-                <video
-                  ref={el => videoRefs.current[project.folderName] = el}
-                  className="hover-video"
-                  muted
-                  loop
-                  preload="metadata"
-                  playsInline
-                >
-                  <source src={project.videoSrc} type="video/mp4" />
-                </video>
+                    <video
+                      ref={el => videoRefs.current[project.folderName] = el}
+                      className="hover-video"
+                      muted
+                      loop
+                      preload="metadata"
+                      playsInline
+                    >
+                      <source src={project.videoSrc} type="video/mp4" />
+                    </video>
 
-                <img
-                  id={`${project.folderName}Image`}
-                  alt={`${project.title} image`}
-                  className="projectVisials"
-                  src={`./${project.images[0]}`}
-                  onMouseEnter={() => {
-                    const video = videoRefs.current[project.folderName];
-                    if (video) video.play().catch(() => { });
-                  }}
-                  onMouseLeave={() => {
-                    const video = videoRefs.current[project.folderName];
-                    if (video) {
-                      video.pause();
-                      video.currentTime = 0;
-                    }
-                  }}
-                />
-              </div>
-                  
-                  <div className="boxContainerItemsHorizontal">
-                    {project.technologies.map(tech => (
-                      <img key={tech.src} src={tech.src} alt={tech.alt} className="smallLogoImage" />
-                    ))}
+                    <img
+                      id={`${project.folderName}Image`}
+                      alt={`${project.title} image`}
+                      className="projectVisials"
+                      src={`./${project.images[0]}`}
+                      onMouseEnter={() => {
+                        const video = videoRefs.current[project.folderName];
+                        if (video) video.play().catch(() => { });
+                      }}
+                      onMouseLeave={() => {
+                        const video = videoRefs.current[project.folderName];
+                        if (video) {
+                          video.pause();
+                          video.currentTime = 0;
+                        }
+                      }}
+                    />
                   </div>
 
-                  {project.styleType === 2 && <h3><strong>{project.title}</strong></h3>}
+                  <div className="pc-inside projectInfo">
 
-                  <div className="boxContainerItemsVertical transparentBackground" style={project.styleType === 2 ? { margin: "2%" } : {}}>
-                    <p>{project.description}</p>
-                    <span>Last update: {project.lastUpdate}</span>
-                    {project.codeLink && (
-                      <a href={project.codeLink} target="_blank" className="projectCodeLink">View Code</a>
-                    )}
+                      <div className="boxContainerItemsHorizontal">
+                        {project.technologies.map(tech => (
+                          <img key={tech.src} src={tech.src} alt={tech.alt} className="smallLogoImage" />
+                        ))}
+                      </div>
+
+                      <h2><strong>{project.title}</strong></h2>
+
+                        <p>{project.description}</p>
+                        {project.codeLink && (
+                          <a href={project.codeLink} target="_blank" className="projectCodeLink">View Code</a>
+                        )}
+                      </div>
                   </div>
-
-                </div>
               } />
           );
         })}
       </div>
-
 
     </section>
   );

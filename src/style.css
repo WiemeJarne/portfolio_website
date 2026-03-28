@@ -1,7 +1,7 @@
 :root {
     --primaryColor: #B35F00;
     --secondaryColor: #1b2021;
-    --backgroundColor: #1d2a3500;
+    --backgroundColor: rgba(48, 42, 62, 0);
     --textColor: #eff6e0;
     --titleColor: #eff6e0;
     --accentColor: #e83f6f;
@@ -47,12 +47,11 @@ footer {
 }
 
 .boxContainerItemsHorizontal {
-    background: var(--cardBackground);
+    mix-blend-mode: luminosity;
     display: flex !important;
     justify-content: center;
     align-items: center;
     padding: 2%;
-    height: fit-content;
 }
 
 .sectionStyle {
@@ -83,36 +82,39 @@ a[target="_blank"]::after {
     content:"↗";
 }
 
-p {
-    font-size: 1rem;
-    color: var(--textColor);
-    text-align: justify;
+.myProfile p {
+    line-height: 1.5;
+    margin: 0.5em 0;
+    font-weight: 600;
+    top: -12px;
+    font-size: 16px;
+    background-image: linear-gradient(to bottom, #fff, #4a4ac0);
+    background-size: 10em, 1.5em;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 h1 {
     color: var(--titleColor);
-    font-size: 2rem;
-    padding-bottom: 20px;
-    text-transform: uppercase;
+    font-size: min(5svh, 4em);
+    background-image: linear-gradient(to bottom, #fff, #6f6fbe);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 0;
 }
 
 h2 {
-    font-size: 45px;
-    font-weight: bold;
-}
-
-h4 {
-    color: var(--primaryColor);
-}
-
-h3 {
+    font-size: min(4svh, 2em);
+    background-image: linear-gradient(to bottom, #fff, #6f6fbe);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     text-decoration: underline;
+    margin: 0;
 }
-
-h2 {
-    color: var(--primaryColor);
-}
-
+    
 .highlight {
     color: var(--accentColor);
 }

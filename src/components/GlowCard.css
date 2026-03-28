@@ -36,6 +36,7 @@
     position: relative;
     touch-action: none;
     box-sizing: border-box;
+    margin: auto;
 }
 
 .pc-behind {
@@ -99,11 +100,8 @@
 
 .pc-inside {
     inset: 0;
-    position: absolute;
     background-image: var(--inner-gradient);
     background-color: rgba(0, 0, 0, 0.9);
-    transform: none;
-    display: grid;
 }
 
 .pc-shine {
@@ -207,7 +205,8 @@
 .pc-avatar-content .avatar {
     backface-visibility: hidden;
     transition: transform 120ms ease-out;
-    width: 105%;
+    height: 50svh;
+    margin-left: 12%;
     /* avatar takes 30% of card width */
 }
 
@@ -300,51 +299,10 @@
 }
 
 .pc-content {
-    max-height: 100%;
     overflow: hidden;
-    text-align: center;
-    position: relative;
-    transform: translate3d(calc(var(--pointer-from-left) * -6px + 3px), calc(var(--pointer-from-top) * -6px + 3px), 0.1px);
     z-index: 5;
     mix-blend-mode: luminosity;
     display: flex;
-    flex-direction: row;
-}
-
-.pc-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
-    /* space above avatar */
-}
-
-.pc-details h3 {
-    font-weight: 600;
-    margin: 0;
-    font-size: min(5svh, 3em);
-    margin: 0;
-    background-image: linear-gradient(to bottom, #fff, #6f6fbe);
-    background-size: 1em 1.5em;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.pc-details p {
-    font-weight: 600;
-    position: relative;
-    top: -12px;
-    white-space: nowrap;
-    font-size: 16px;
-    margin: 0 auto;
-    width: min-content;
-    background-image: linear-gradient(to bottom, #fff, #4a4ac0);
-    background-size: 1em 1.5em;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
 }
 
 .pc-about {
@@ -361,16 +319,6 @@
     z-index: 5;
     grid-area: auto;
     /* <- key fix */
-}
-
-.pc-about h3 {
-    font-size: min(4svh, 2em);
-    margin-bottom: 0.5em;
-    background-image: linear-gradient(to bottom, #fff, #6f6fbe);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    width: fit-content;
 }
 
 .pc-about p {
@@ -400,20 +348,6 @@
     font-size: min(4svh, 2em);
     margin-bottom: 0.5em;
     background-image: linear-gradient(to bottom, #fff, #6f6fbe);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.myProfile span {
-    line-height: 1.5;
-    margin: 0.5em 0;
-    font-weight: 600;
-    top: -12px;
-    font-size: 16px;
-    margin: 0 auto;
-    background-image: linear-gradient(to bottom, #fff, #4a4ac0);
-    background-size: 10em, 1.5em;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -453,6 +387,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .skillsGrid {

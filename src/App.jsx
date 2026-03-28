@@ -1,31 +1,34 @@
 import Home from './Home'
 import FloatingLines from './components/Background_FloatingLines';
+import { GridScan } from "./components/Background_GridScan";
+import RippleGrid from './components/Background_RippleGrid';
 function App() {
   return(
     <>
-    <div style={{ width: '100%', position: 'sticky', zIndex:'-1' }}>
-
-  <FloatingLines 
-
-    enabledWaves={['top', 'middle', 'bottom']}
-
-    // Array - specify line count per wave; Number - same count for all waves
-
-    lineCount={[10, 15, 20]}
-
-    // Array - specify line distance per wave; Number - same distance for all waves
-
-    lineDistance={[80, 80, 80]}
-
-    bendRadius={5.0}
-
-    bendStrength={-0.5}
-
-    interactive={false}
-
-    parallax={false}
+    <div style={{
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: -1
+  }}>
     
+  <GridScan
+    sensitivity={0.55}
+    lineThickness={1}
+    linesColor= 'rgb(201, 180, 255)'
+    gridScale={0.1}
+    scanColor="#9fffef"
+    scanOpacity={0.4}
+    enablePost
+    bloomIntensity={1}
+    chromaticAberration={0.0} 
+    noiseIntensity={0.0}
+    lineJitter={0}
+    scanDirection='backward'
   />
+
 </div>
    <Home />
    </>
