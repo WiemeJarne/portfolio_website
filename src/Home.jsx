@@ -1,17 +1,16 @@
 import './style.css'
+import './components/Skills.css'
 import Projects from './components/Projects'
 import GlowCard from './components/GlowCard'
 
 export default function Home() {
   return (
-    <div>  
+    <div className='parentContainer'>  
       <GlowCard
-        cardHeight="50svh"
-        cardWith="75%"
+        cardHeight="auto"
+        cardWith="100%"
         name="Jarne Wieme"
         title="Software Engineer"
-        aboutText=" Hello! My name is Jarne Wieme, I graduated in DAE game development in June 2024 at Howest University in Kortrijk.
-                  During my time at Howest I learned to work with commonly used tools that are being used by game developments companies today. This includes C++, C#, Unity, Unreal Engine 4 and 5... There were also two group projects where we learned to work with source control and communicate with each other. We learned different categories of programming for a game studio like graphics programming, gameplay programming, game engine programming and AI programming."
         avatarUrl="./images/Me.png"
         showUserInfo={false}
         enableTilt={false}
@@ -21,7 +20,6 @@ export default function Home() {
         children={
           <div className="pc-content">
             <div className="pc-avatar-content">
-              <div>
                 <img
                   className="avatar"
                   src="./images/Me.png"
@@ -32,13 +30,12 @@ export default function Home() {
                     t.style.display = 'none';
                   }}
                 />
-              </div>
             </div>
             <div className="pc-about">
               <h1>Jarne Wieme</h1>
               <h2>Software Engineer</h2>
-              <p>" Hello! My name is Jarne Wieme, I graduated in DAE game development in June 2024 at Howest University in Kortrijk.
-                During my time at Howest I learned to work with commonly used tools that are being used by game developments companies today. This includes C++, C#, Unity, Unreal Engine 4 and 5... There were also two group projects where we learned to work with source control and communicate with each other. We learned different categories of programming for a game studio like graphics programming, gameplay programming, game engine programming and AI programming."</p>
+              <p>Hello! My name is Jarne Wieme, I graduated in DAE game development in June 2024 at Howest University in Kortrijk.
+                During my time at Howest I learned to work with commonly used tools that are being used by game developments companies today. This includes C++, C#, Unity, Unreal Engine 4 and 5... There were also two group projects where we learned to work with source control and communicate with each other. We learned different categories of programming for a game studio like graphics programming, gameplay programming, game engine programming and AI programming.</p>
             </div>
           </div>
         }
@@ -52,8 +49,8 @@ export default function Home() {
         {/* Skills */}
         <GlowCard
           cardPadding="1% 0% 1% 0%"
-          cardHeight="35svh"
-          cardWith='75%'
+          cardHeight="auto"
+          cardWith='100%'
           children={
             <div className="skills-content">
               <h1><strong>Skills</strong></h1>
@@ -97,8 +94,8 @@ export default function Home() {
 
       <GlowCard
           cardPadding="1% 0% 1% 0%"
-          cardHeight="30svh"
-          cardWith='75%'
+          cardHeight="auto"
+          cardWith='100%'
           children={
             <div className='myProfile'>
               <h1><strong>Contact Me</strong></h1>

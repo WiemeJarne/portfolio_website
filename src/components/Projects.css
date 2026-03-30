@@ -1,93 +1,19 @@
 .projectsGrid {
-    width: 75%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     margin: auto;
-    justify-content: space-between;
+    gap: 15px;
+    align-items: stretch;
 }
 
 .projectContainer {
-     max-height: 100%;
-    overflow: hidden;
     text-align: center;
-    display: flex !important;
-    flex-direction: column !important;
     padding: 5%;
-}
-
-.projectContainer p{
-    line-height: 1.5;
-    margin: 0.5em 0;
-    font-weight: 600;
-    top: -12px;
-    font-size: 16px;
-    padding: 5%;
-    margin: 0 auto;
-    background-image: linear-gradient(to bottom, #fff, #4a4ac0);
-    background-size: 1em, 1.5em;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.projectContainer span{
-    line-height: 1.5;
-    margin: 0.5em 0;
-    font-weight: 600;
-    top: -12px;
-    font-size: 16px;
-    padding: 5%;
-    margin: 0 auto;
-    background-image: linear-gradient(to bottom, #fff, #4a4ac0);
-    background-size: 1em, 1.5em;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.projectContainer a{
-     display: inline;
-    /* ensure it's inline */
-    white-space: nowrap;
-    /* never break the link text and arrow apart */
-
-    line-height: 1.5;
-    margin: 0.5em 0;
-    font-weight: 600;
-    top: -12px;
-    font-size: 16px;
-    margin: 0 auto;
-    background-image: linear-gradient(to bottom, #fff, #4a4ac0);
-    background-size: 10em, 1.5em;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.projectContainer.style2 {
-    padding: 0;
-    /* remove top padding so image starts at top */
-}
-
-.projectContainer.style2 .playVideoOnImageHover,
-.projectContainer.style2 .projectVisials,
-.projectContainer.style2 .hover-video {
-    border-radius: 25px 25px 0 0;
-}
-
-.projectContainer.style2 .playVideoOnImageHover {
-    
-    margin: 0;
-    /* remove any default spacing */
-}
-
-/*only top row should have top maring*/
-.projectContainer:not(:nth-of-type(-n+2)) {
-    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
 }
 
 .projectsSection {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -106,11 +32,10 @@
     isolation: isolate;
     position: relative;
     width: 100%;
-    height: 35%;
     overflow: hidden;
+    margin-top: 5%;
+    height: auto;
 }
-
-/* Initially hide the video */
 
 .hover-video {
     position: absolute;
@@ -127,10 +52,6 @@
     /* same as the images */
 }
 
-.style2 .hover-video {
-  border-radius: 25px 25px 0 0;
-}
-
 .playVideoOnImageHover:hover .hover-video {
     opacity: 1;
 }
@@ -144,19 +65,13 @@
     margin: 5px;
 }
 
-.projectsTitleBanner {
-    mix-blend-mode: luminosity;
-    align-items: center;
-    justify-content: center;
-}
-
 .bottomMeta {
     display: flex;
     flex-direction: column;
     margin-top: auto;
 }
 
-.pc-inside.projectInfo {
+.projectInfo {
     display: flex;
     flex-direction: column;
     flex: 1;

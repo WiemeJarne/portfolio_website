@@ -31,11 +31,11 @@ export default function Projects() {
   return (
     <section className="projectsSection">
       <GlowCard
-        cardHeight="10svh"
-        cardWith="75%"
-        cardPadding="1% 0% 1% 0%"
+        cardHeight="auto"
+        cardWith="100%"
+        cardPadding="0% 0% 1% 0%"
         children={
-          <div className="projectsTitleBanner">
+          <div className="TitleBanner">
             <h1>Projects</h1>
           </div>
         }
@@ -46,11 +46,12 @@ export default function Projects() {
           return (
             <GlowCard
               key={`grid1-${project.folderName}`}
-              cardWith="32%"
-              cardHeight="80svh"
-              cardPadding="1% 0% 0% 0%"
+              cardWith="100%"
+              cardHeight="auto"
               children={
-                <div className={`projectContainer style2`}>
+                <div className={`projectContainer`}>
+
+                  <h2><strong>{project.title}</strong></h2>
 
                   <div className="playVideoOnImageHover">
                     <video
@@ -83,22 +84,20 @@ export default function Projects() {
                     />
                   </div>
 
-                  <div className="pc-inside projectInfo">
+                  <div className="projectInfo">
 
-                      <div className="boxContainerItemsHorizontal">
-                        {project.technologies.map(tech => (
-                          <img key={tech.src} src={tech.src} alt={tech.alt} className="smallLogoImage" />
-                        ))}
-                      </div>
+                    <div className="boxContainerItemsHorizontal">
+                      {project.technologies.map(tech => (
+                        <img key={tech.src} src={tech.src} alt={tech.alt} className="smallLogoImage" />
+                      ))}
+                    </div>
 
-                      <h2><strong>{project.title}</strong></h2>
-
-                        <p>{project.description}</p>
-                        {project.codeLink && (
-                          <a href={project.codeLink} target="_blank" className="projectCodeLink">View Code</a>
-                        )}
-                      </div>
+                    <p>{project.description}</p>
+                    {project.codeLink && (
+                      <a href={project.codeLink} target="_blank" className="projectCodeLink">View Code</a>
+                    )}
                   </div>
+                </div>
               } />
           );
         })}

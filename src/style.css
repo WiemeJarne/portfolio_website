@@ -17,7 +17,8 @@
     --unrealLogoImage: url("../../images/logos/unrealLogo.png");
 }
 
-html, body {
+html,
+body {
     height: 100%;
     min-height: 100%;
 }
@@ -33,7 +34,8 @@ footer {
 #root {
     width: 100%;
     display: flex;
-    flex-direction: column; /* if your app is column-based */
+    flex-direction: column;
+    /* if your app is column-based */
 }
 
 .boxContainerItemsVertical {
@@ -71,28 +73,26 @@ body {
 }
 
 a {
-    color: var(--primaryColor);
-}
+    display: inline;
+    /* ensure it's inline */
+    white-space: nowrap;
+    /* never break the link text and arrow apart */
 
-a:hover {
-    color: white;
-}
-
-a[target="_blank"]::after {
-    content:"↗";
-}
-
-.myProfile p {
     line-height: 1.5;
     margin: 0.5em 0;
     font-weight: 600;
     top: -12px;
     font-size: 16px;
+    margin: 0 auto;
     background-image: linear-gradient(to bottom, #fff, #4a4ac0);
     background-size: 10em, 1.5em;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+a[target="_blank"]::after {
+    content: "↗";
 }
 
 h1 {
@@ -102,7 +102,6 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    margin: 0;
 }
 
 h2 {
@@ -114,7 +113,7 @@ h2 {
     text-decoration: underline;
     margin: 0;
 }
-    
+
 .highlight {
     color: var(--accentColor);
 }
@@ -144,4 +143,70 @@ h2 {
 
 .activePage {
     color: var(--primaryColor);
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 1%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #fff, #4a4ac0);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.TitleBanner {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+    margin: 1% 0% 1% 0%;
+}
+
+.pc-avatar-content {
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.avatar{
+    border-radius: var(--card-radius);
+}
+
+.pc-avatar-content .avatar {
+    backface-visibility: hidden;
+    transition: transform 120ms ease-out;
+    height: 50svh;
+    width: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.pc-content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.pc-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 60%;
+    margin: 0% 5% 0% 5%;
+}
+
+.myProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 0% 1% 0%;
+}
+
+.parentContainer{
+    width: 75%;
+    margin: auto;
 }

@@ -313,15 +313,12 @@ const ProfileCardComponent = ({
 
     return (
         <div ref={wrapRef} className={`pc-card-wrapper ${className}`.trim()} style={cardStyle}>
-            {behindGlowEnabled && <div className="pc-behind" />}
-            <div ref={shellRef} className="pc-card-shell">
                 <section className="pc-card" style={{height: cardHeight}}>
                     <div className="pc-inside">
                             {children}
                     </div>
                 </section>
             </div>
-        </div>
     );
 };
 
