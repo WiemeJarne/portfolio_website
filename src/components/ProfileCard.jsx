@@ -14,9 +14,8 @@ export default function ProfileCard() {
         <div className="pc-avatar-content">
           <img
             className="avatar"
-            src="./images/Me.png"
+            src="./images/Me.webp"
             alt="Jarne Wieme avatar"
-            loading="lazy"
             onError={e => {
               e.target.style.display = 'none'
             }}
