@@ -38,33 +38,6 @@ footer {
     /* if your app is column-based */
 }
 
-.boxContainerItemsVertical {
-    background: var(--cardBackground);
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    height: fit-content;
-}
-
-.boxContainerItemsHorizontal {
-    mix-blend-mode: luminosity;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-}
-
-.sectionStyle {
-    display: flex;
-    justify-content: space-between;
-}
-
-.transparentBackground {
-    background: transparent;
-}
-
 body {
     background-color: var(--backgroundColor);
     color: var(--textColor);
@@ -114,37 +87,6 @@ h2 {
     margin: 0;
 }
 
-.highlight {
-    color: var(--accentColor);
-}
-
-.btn-primary {
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-primary:hover {
-    background-color: var(--primaryColor) !important;
-    transform: scale(1.1);
-}
-
-.btn-primary:focus {
-    outline: none;
-    box-shadow: none;
-    background-color: var(--primaryColor) !important;
-}
-
-.logoImage {
-    height: 50px;
-}
-
-.logoImageTable {
-    padding: 5px;
-}
-
-.activePage {
-    color: var(--primaryColor);
-}
-
 p {
     line-height: 1.5;
     font-weight: 600;
@@ -157,56 +99,8 @@ p {
     -webkit-background-clip: text;
 }
 
-.TitleBanner {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1 100%;
-    margin: 1% 0% 1% 0%;
-}
-
-.pc-avatar-content {
-    flex: 1 1 auto;
-    justify-content: center;
-}
-
-.avatar{
-    border-radius: var(--card-radius);
-}
-
-.pc-avatar-content .avatar {
-    backface-visibility: hidden;
-    transition: transform 120ms ease-out;
-    height: 50svh;
-    width: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-.pc-content {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.pc-about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1 60%;
-    margin: 0% 5% 0% 5%;
-}
-
-.myProfile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1% 0% 1% 0%;
-}
-
 .parentContainer{
     width: 75%;
     margin: auto;
+    max-width: 1500px;
 }

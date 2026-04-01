@@ -3,7 +3,6 @@ import { BloomEffect, ChromaticAberrationEffect, EffectComposer, EffectPass, Ren
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import './Background_GridScan.css';
-import './Background_FloatingLines';
 
 const vert = `
 varying vec2 vUv;

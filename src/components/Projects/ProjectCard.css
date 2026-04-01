@@ -1,0 +1,30 @@
+.projectContainer {
+    text-align: center;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.skillsUsedContainer {
+    mix-blend-mode: luminosity;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.smallSkillLogoImage {
+    height: 35px;
+    margin: 5px;
+}
+
+.projectCard{
+    max-width: 500px;
+    width: 100%;
+}

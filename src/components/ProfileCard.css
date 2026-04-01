@@ -1,0 +1,29 @@
+.pc-content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.pc-avatar-content {
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.avatar{
+    border-radius: var(--card-radius);
+    backface-visibility: hidden;
+    transition: transform 120ms ease-out;
+    height: 50svh;
+    width: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.pc-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 60%;
+    margin: 0% 5% 0% 5%;
+}

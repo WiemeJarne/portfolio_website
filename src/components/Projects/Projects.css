@@ -1,0 +1,45 @@
+.projectsGrid {
+    display: grid;
+    margin: auto;
+    gap: 15px;
+    align-items: stretch;
+    max-width: 1500px;
+}
+
+/* Mobile */
+.projectsGrid {
+    grid-template-columns: 1fr;
+}
+
+/* Tablet */
+@media (min-width: 750px) {
+    .projectsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1500px) {
+    .projectsGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.projectsSection {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.bottomMeta {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.TitleBanner {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+    margin: 1% 0% 1% 0%;
+}
